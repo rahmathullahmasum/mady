@@ -1,0 +1,30 @@
+/*-------------------------
+    Global
+-------------------------*/
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    @media (min-width: 1300px) {
+        max-width: 1256px;
+    }
+}
+
+.main-wrapper {
+    overflow: hidden;
+    background-color: var(--color-light-1);
+    transition: var(--transition);
+}
+
+button:focus-visible {
+    outline: none;
+}
+
+button:focus:not(:focus-visible) {
+    outline: 0 !important;
+}
