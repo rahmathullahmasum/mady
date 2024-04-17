@@ -277,6 +277,10 @@ button:focus:not(:focus-visible) {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+.mady-template-layout1 .mady-bg-img:hover img {
+  border-radius: 0 0 100px 0;
 }
 .mady-template-layout1 .mady-content {
   padding: 50px 150px 50px 82px;
