@@ -56,12 +56,9 @@ STYLESHEET INDEXING
     Variables
 -------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
-:root body.active-dark-mode {
-  --color-body: #c1c6c9;
-}
-
 :root {
-  --color-body: #494e51;
+  --color-body: #74787C;
+  --color-title: #20282D;
   --color-primary: #F75959;
   --color-primary-rgb: 247, 89, 89;
   --facebook: #337FFF;
@@ -74,42 +71,14 @@ STYLESHEET INDEXING
   --youtube: #FF0000;
   --dribbble: #444444;
   --mail-fast: #776CF2;
-  --font-primary: "Roboto", sans-serif;
-  --font-secondary: "Poppins", sans-serif;
-  --font-icomoon: "icomoon" !important;
+  --font-primary: "Inter", sans-serif;
   --transition: all 0.3s ease-in-out;
   --transition-menu: all 0.4s cubic-bezier(.30,.02,0,.60);
   --transition-slider: 1s cubic-bezier(0.45, 0.05, 0.15, 0.93) 0.15s;
   --transition-figure: all 0.5s cubic-bezier(0.23, 0.03, 0, 1.08);
-  --size-b1: 24px;
-  --size-b2: 20px;
-  --size-b3: 18px;
-  --size-b4: 17px;
-  --size-b5: 16px;
-  --size-b6: 15px;
-  --size-b7: 14px;
+  --body-font-size: 15px;
   --h1-large: 64px;
   --h1: 40px;
-}
-@media (max-width: 767px) {
-  :root {
-    --size-b1: 22px;
-  }
-}
-@media (max-width: 767px) {
-  :root {
-    --size-b2: 18px;
-  }
-}
-@media (max-width: 767px) {
-  :root {
-    --size-b3: 17px;
-  }
-}
-@media (max-width: 767px) {
-  :root {
-    --size-b4: 17px;
-  }
 }
 @media (max-width: 991px) {
   :root {
@@ -147,6 +116,7 @@ STYLESHEET INDEXING
 -------------------------*/
 body {
   font-family: var(--font-primary);
+  font-size: var(--body-font-size);
   line-height: 1.55;
   color: var(--color-body);
   font-weight: 400;
@@ -158,6 +128,7 @@ body {
 }
 
 p {
+  font-size: var(--body-font-size);
   line-height: 1.67;
   margin: 0 0 20px 0;
   color: var(--color-body);
@@ -206,8 +177,9 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: var(--font-secondary);
+  font-family: var(--font-primary);
   font-weight: 600;
+  color: var(--color-title);
   transition: var(--transition);
 }
 
@@ -328,7 +300,7 @@ button:focus:not(:focus-visible) {
   font-size: 15px;
   color: #20282D;
 }
-.mady-template-layout1 .mady-form-area .input-label {
+.mady-template-layout1 .mady-form-area .mady-input-label {
   font-size: 15px;
   color: #20282D;
   font-weight: 500;
@@ -399,6 +371,18 @@ button:focus:not(:focus-visible) {
 }
 .mady-template-layout1 .mady-page-switcher a {
   color: #20282D;
+}
+.mady-template-layout1 .mady-input-row {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.mady-template-layout1 .mady-input-row .mady-input-col {
+  padding: 10px 5px;
+  text-align: center;
+  flex-basis: 0;
+  flex-grow: 1;
 }
 .mady-template-layout1 .mady-socials {
   display: flex;

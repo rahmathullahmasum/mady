@@ -70,7 +70,7 @@
 				color: #20282D;
 			}
 		}
-		.input-label {
+		.mady-input-label {
 			font-size: 15px;
 			color: #20282D;
 			font-weight: 500;
@@ -146,6 +146,18 @@
 			color: #20282D;
 		}
 	}
+    .mady-input-row {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        .mady-input-col {
+            padding: 10px 5px;
+            text-align: center;
+            flex-basis: 0;
+            flex-grow: 1;
+        }
+    }
 	.mady-socials {
 		display: flex;
 		align-items: center;

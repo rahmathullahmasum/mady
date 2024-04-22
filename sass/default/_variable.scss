@@ -1,14 +1,9 @@
 /*-------------------------
     Variables
 -------------------------*/
-:root body.active-dark-mode {
-    // Dark Mode Color
-    --color-body: #c1c6c9;
-}
-
 :root {
-    // Light Mode Color
-    --color-body: #494e51;
+    --color-body: #74787C;
+    --color-title: #20282D;
     
     // Template Color
     --color-primary: #F75959;
@@ -28,9 +23,7 @@
     --mail-fast: #776CF2;   
 
     // Font Family
-    --font-primary: 'Roboto', sans-serif;
-    --font-secondary: 'Poppins', sans-serif;
-    --font-icomoon: 'icomoon' !important;
+    --font-primary: "Inter", sans-serif;
 
     // Transition
     --transition: all 0.3s ease-in-out;
@@ -39,33 +32,7 @@
     --transition-figure: all 0.5s cubic-bezier(0.23, 0.03, 0, 1.08);
 
     // Body Font Size
-    --size-b1: 24px;
-
-    @media (max-width: 767px) {
-        --size-b1: 22px;
-    }
-
-    --size-b2: 20px;
-
-    @media (max-width: 767px) {
-        --size-b2: 18px;
-    }
-
-    --size-b3: 18px;
-
-    @media (max-width: 767px) {
-        --size-b3: 17px;
-    }
-
-    --size-b4: 17px;
-
-    @media (max-width: 767px) {
-        --size-b4: 17px;
-    }
-
-    --size-b5: 16px;
-    --size-b6: 15px;
-    --size-b7: 14px;
+    --body-font-size: 15px;
 
     // Heading Font Size
     --h1-large: 64px;
