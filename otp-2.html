@@ -39,47 +39,28 @@
                 </div> -->
             </div>
             <div class="mady-form-area">
-                <h2 class="mady-title">Welcome Back!</h2>
-                <p>Inter your email address and password to get access your account</p>                
-                <form method="POST">
+                <h2 class="mady-title">Two-Step Verification</h2>
+                <p>We’ve sent a verification code to +9*******558</p>                
+                <form method="POST" id="otp-form">
                     <div class="form-group">
-                        <div class="position-relative">
-                            <input type="email" class="form-control" name="email" placeholder="Enter Email Address" required="required">
-                            <div class="icon-holder">
-                                <i class="fa-light fa-envelope"></i>
-                            </div>
+                        <label for="email" class="mady-input-label">Enter OTP Code Here</label>
+                        <div class="mady-input-row">
+                            <input type="text" class="mady-input-col otp-input form-control" maxlength="1" required="required">
+                            <input type="text" class="mady-input-col otp-input form-control" maxlength="1" required="required">
+                            <input type="text" class="mady-input-col otp-input form-control" maxlength="1" required="required">
+                            <input type="text" class="mady-input-col otp-input form-control" maxlength="1" required="required">
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="position-relative">
-                            <input id="signupPassword" type="password" class="form-control" name="password" placeholder="Enter password" required="required">
-                            <div class="icon-holder">
-                                <i class="fa-regular fa-lock"></i>
-                            </div>
-                            <div class="eye-trigger">
-                                <i toggle="#signupPassword" class="toggle-password field-icon fa-light fa-eye-slash"></i>
-                            </div>
-                        </div>
+                        <button type="submit" class="mady-btn-fill">Verify It</button>
                     </div>
-                    <div class="form-group">
-                        <button type="submit" class="mady-btn-fill">Login Account</button>
-                    </div>
-                </form>                
-                <div class="mady-forgot-text">
-                    <a href="forgot-password-2.html">Forgot Password</a>
-                </div>
-                <div class="mady-divider-area">
-                    <span class="mady-divider-line"></span><div class="mady-divider-text">Or</div><span class="mady-divider-line"></span>
-                </div>
-                <div class="mady-login-option">
-                    <a href="#"><div class="icon-holder"><img src="img/elements/g-icon.png" alt="G Icon"></div>Use Google Account</a>
-                </div>
-                <div class="mady-login-option">
-                    <a href="#"><div class="icon-holder"><img src="img/elements/f-icon.png" alt="F Icon"></div> Sign up with Facebook</a>
+                </form>  
+                <div class="mady-resend-code">
+                    <p>Not received your code? <a href="#">Resend code</a> OR <a href="#">Call</a></p>
                 </div>
             </div>
             <div class="mady-footer">
-                <p class="mady-page-switcher">Don't have an account?<a href="register-2.html">Register Now</a></p>               
+                <p class="mady-page-switcher">Already have an account?<a href="login-2.html">Log in now!</a></p>               
             </div>
         </div>
     </section>

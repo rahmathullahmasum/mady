@@ -39,14 +39,22 @@
                 </div> -->
             </div>
             <div class="mady-form-area">
-                <h2 class="mady-title">Welcome Back!</h2>
-                <p>Inter your email address and password to get access your account</p>                
+                <h2 class="mady-title">Register Your Account</h2>
+                <p>Inter your valid email address and password to register your account</p>                
                 <form method="POST">
+                    <div class="form-group">
+                        <div class="position-relative">
+                            <input type="text" class="form-control" name="name" placeholder="Full Name" required="required">
+                            <div class="icon-holder">
+                                <i class="fa-light fa-user"></i>
+                            </div>
+                        </div>
+                    </div>
                     <div class="form-group">
                         <div class="position-relative">
                             <input type="email" class="form-control" name="email" placeholder="Enter Email Address" required="required">
                             <div class="icon-holder">
-                                <i class="fab fa-facebook-f"></i>
+                                <i class="fa-light fa-envelope"></i>
                             </div>
                         </div>
                     </div>
@@ -54,20 +62,20 @@
                         <div class="position-relative">
                             <input id="signupPassword" type="password" class="form-control" name="password" placeholder="Enter password" required="required">
                             <div class="icon-holder">
-                                <i class="fab fa-facebook-f"></i>
+                                <i class="fa-regular fa-lock"></i>
                             </div>
                             <div class="eye-trigger">
                                 <i toggle="#signupPassword" class="toggle-password field-icon fa-light fa-eye-slash"></i>
                             </div>
                         </div>
+                        <div class="strong-password">
+                            <p>Minimum 8 characters long and containing at least one numeric, uppercase, lowercase, and special character.</p>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <button type="submit" class="mady-btn-fill">Login Account</button>
+                        <button type="submit" class="mady-btn-fill">Register Account</button>
                     </div>
-                </form>                
-                <div class="mady-forgot-text">
-                    <a href="forgot-password-1.html">Forgot Password</a>
-                </div>
+                </form>  
                 <div class="mady-divider-area">
                     <span class="mady-divider-line"></span><div class="mady-divider-text">Or</div><span class="mady-divider-line"></span>
                 </div>
@@ -79,7 +87,7 @@
                 </div>
             </div>
             <div class="mady-footer">
-                <p class="mady-page-switcher">Don't have an account?<a href="register-1.html">Register Now</a></p>               
+                <p class="mady-page-switcher">Already have an account?<a href="login-2.html">Log in now!</a></p>               
             </div>
         </div>
     </section>
