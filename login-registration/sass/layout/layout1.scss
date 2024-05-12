@@ -616,8 +616,10 @@
 		bottom: 0;
 		right: 0;
 		z-index: -1;
+		overflow: hidden;
 		.mady-shape-holder {
 			position: absolute;
+			transition: all 1s ease-in-out;
 		}
 		.mady-shape-1 {
 			top: 40%;
@@ -634,6 +636,32 @@
 		.mady-shape-4 {
 			bottom: 0;
 			right: 0;
+		}
+		&.fxt-template-animation {
+			.mady-shape-1 {
+				transform: translate(-100%, 0);
+				transition-delay: 0;
+			}
+			.mady-shape-2 {
+				transform: translate(100%, 0);
+				transition-delay: 0.2s;
+			}
+			.mady-shape-3 {
+				transform: translate(-100%, 100%);
+				transition-delay: 0.3s;
+			}
+			.mady-shape-4 {
+				transform: translate(100%, 100%);
+				transition-delay: 0.4s;
+			}
+		}
+		&.fxt-template-animation.loaded {
+			.mady-shape-1,
+			.mady-shape-2,
+			.mady-shape-3,
+			.mady-shape-4 {
+				transform: translate(0, 0);
+			}
 		}
 	}
 	.mady-header {
