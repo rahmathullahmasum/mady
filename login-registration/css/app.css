@@ -239,13 +239,35 @@ button:focus:not(:focus-visible) {
   display: flex;
   justify-content: flex-end;
 }
+@media screen and (max-width: 991px) {
+  .mady-template-layout1 {
+    display: block;
+  }
+}
 .mady-template-layout1 .mady-bg-img {
+  overflow: hidden;
   height: 100vh;
   width: 63%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
+}
+@media screen and (max-width: 1500px) {
+  .mady-template-layout1 .mady-bg-img {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .mady-template-layout1 .mady-bg-img {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .mady-template-layout1 .mady-bg-img {
+    width: 100%;
+    position: inherit;
+  }
 }
 .mady-template-layout1 .mady-bg-img img {
   height: 100%;
@@ -281,6 +303,34 @@ button:focus:not(:focus-visible) {
   justify-content: space-between;
   gap: 50px;
 }
+@media screen and (max-width: 1500px) {
+  .mady-template-layout1 .mady-content {
+    width: 45%;
+    padding: 45px 110px 45px 62px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .mady-template-layout1 .mady-content {
+    width: 50%;
+    padding: 40px 90px 40px 52px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .mady-template-layout1 .mady-content {
+    width: 100%;
+    padding: 80px 150px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mady-template-layout1 .mady-content {
+    padding: 60px 50px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .mady-template-layout1 .mady-content {
+    padding: 40px 24px;
+  }
+}
 .mady-template-layout1 .mady-form-area .mady-title {
   margin-bottom: 25px;
 }
@@ -293,6 +343,16 @@ button:focus:not(:focus-visible) {
   border-radius: 3px;
   background-color: #F6F6F6;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 991px) {
+  .mady-template-layout1 .mady-form-area .mady-login-option {
+    height: 55px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mady-template-layout1 .mady-form-area .mady-login-option {
+    height: 50px;
+  }
 }
 .mady-template-layout1 .mady-form-area .mady-login-option a {
   width: 100%;
@@ -350,6 +410,16 @@ button:focus:not(:focus-visible) {
   font-size: 16px;
   color: #A5A5A5;
 }
+@media screen and (max-width: 991px) {
+  .mady-template-layout1 .mady-form-area .form-control {
+    height: 55px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mady-template-layout1 .mady-form-area .form-control {
+    height: 50px;
+  }
+}
 .mady-template-layout1 .mady-form-area .mady-btn-fill {
   height: 60px;
   cursor: pointer;
@@ -366,6 +436,16 @@ button:focus:not(:focus-visible) {
   width: 100%;
   margin-bottom: 40px;
   transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width: 991px) {
+  .mady-template-layout1 .mady-form-area .mady-btn-fill {
+    height: 55px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mady-template-layout1 .mady-form-area .mady-btn-fill {
+    height: 50px;
+  }
 }
 .mady-template-layout1 .mady-forgot-text {
   font-size: 18px;
