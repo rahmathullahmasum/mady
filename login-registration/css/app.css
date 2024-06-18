@@ -1172,4 +1172,8 @@ button:focus:not(:focus-visible) {
   flex-grow: 1;
 }
 
+body {
+  background-color: red;
+}
+
 /*# sourceMappingURL=app.css.map */
