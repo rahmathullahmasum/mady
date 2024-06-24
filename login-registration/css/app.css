@@ -337,13 +337,8 @@ button:focus:not(:focus-visible) {
   margin-bottom: 25px;
 }
 .mady-template-layout1 .mady-form-area .mady-login-option {
-  font-size: 16px;
   width: 100%;
   height: 60px;
-  border: 1px solid;
-  border-color: #DED9D9;
-  border-radius: 3px;
-  background-color: #F6F6F6;
 }
 @media screen and (max-width: 991px) {
   .mady-template-layout1 .mady-form-area .mady-login-option {
@@ -356,6 +351,11 @@ button:focus:not(:focus-visible) {
   }
 }
 .mady-template-layout1 .mady-form-area .mady-login-option a {
+  font-size: 16px;
+  border: 1px solid;
+  border-color: #DED9D9;
+  border-radius: 3px;
+  background-color: #F6F6F6;
   width: 100%;
   height: 100%;
   color: var(--color-title);
@@ -363,9 +363,15 @@ button:focus:not(:focus-visible) {
   align-items: center;
   justify-content: center;
   gap: 15px;
+  transition: all 0.3s ease-in-out;
 }
 .mady-template-layout1 .mady-form-area .mady-login-option a .icon-holder {
   line-height: 1;
+}
+.mady-template-layout1 .mady-form-area .mady-login-option a:hover {
+  border-color: #ffffff;
+  background-color: #ffffff;
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);
 }
 .mady-template-layout1 .mady-form-area .mady-divider-area {
   display: flex;
@@ -402,15 +408,21 @@ button:focus:not(:focus-visible) {
   border: 0;
   color: #9D9FAC;
 }
+.mady-template-layout1 .mady-form-area .form-group input::-ms-input-placeholder {
+  color: #d1d1d1;
+}
+.mady-template-layout1 .mady-form-area .form-group input::placeholder {
+  color: #d1d1d1;
+}
 .mady-template-layout1 .mady-form-area .form-control {
   height: 60px;
   border: 1px solid;
   border-color: #F1F1F1;
   background-color: #ffffff;
-  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.05);
   margin-bottom: 20px;
   font-size: 16px;
-  color: #A5A5A5;
+  color: var(--color-title);
+  transition: all 0.3s ease-in-out;
 }
 @media screen and (max-width: 991px) {
   .mady-template-layout1 .mady-form-area .form-control {
@@ -422,12 +434,16 @@ button:focus:not(:focus-visible) {
     height: 50px;
   }
 }
+.mady-template-layout1 .mady-form-area .form-control:focus {
+  border-color: #20282D;
+  box-shadow: none;
+}
 .mady-template-layout1 .mady-form-area .mady-btn-fill {
   height: 60px;
   cursor: pointer;
   display: inline-block;
-  font-size: 17px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   box-shadow: none;
   outline: none;
   border: 1px solid var(--color-primary-1);
@@ -485,7 +501,7 @@ button:focus:not(:focus-visible) {
   transition: all 0.3s ease-in-out;
 }
 .mady-template-layout1 .mady-forgot-text a:hover {
-  color: var(--color-primary-1);
+  color: #000000;
 }
 .mady-template-layout1 .mady-footer {
   display: flex;
@@ -508,6 +524,7 @@ button:focus:not(:focus-visible) {
 }
 .mady-template-layout1 .mady-page-switcher a:hover {
   color: var(--color-primary-1);
+  text-decoration: underline;
 }
 .mady-template-layout1 .mady-input-row {
   display: flex;
@@ -542,9 +559,23 @@ button:focus:not(:focus-visible) {
   transition: all 0.3s ease-in-out;
 }
 .mady-template-layout1 .mady-socials li a:hover {
-  background-color: #14171A;
   color: #ffffff;
-  border-color: #14171A;
+}
+.mady-template-layout1 .mady-socials li a.mady-facebook:hover {
+  border-color: var(--facebook);
+  background-color: var(--facebook);
+}
+.mady-template-layout1 .mady-socials li a.mady-linkedin:hover {
+  border-color: var(--linkedin);
+  background-color: var(--linkedin);
+}
+.mady-template-layout1 .mady-socials li a.mady-twitter:hover {
+  border-color: var(--twitter);
+  background-color: var(--twitter);
+}
+.mady-template-layout1 .mady-socials li a.mady-instagram:hover {
+  border-color: var(--instagram);
+  background-color: var(--instagram);
 }
 .mady-template-layout1 .mady-resend-code {
   margin-top: 30px;
@@ -752,6 +783,12 @@ button:focus:not(:focus-visible) {
 .mady-template-layout2 .mady-form-area .form-group .strong-password p {
   margin-top: 10px;
 }
+.mady-template-layout2 .mady-form-area .form-group input::-ms-input-placeholder {
+  color: #d1d1d1;
+}
+.mady-template-layout2 .mady-form-area .form-group input::placeholder {
+  color: #d1d1d1;
+}
 .mady-template-layout2 .mady-form-area .form-control {
   height: 60px;
   border: 2px solid;
@@ -759,7 +796,7 @@ button:focus:not(:focus-visible) {
   background-color: #F1F4F7;
   margin-bottom: 20px;
   font-size: 16px;
-  color: #A5A5A5;
+  color: var(--color-title);
   padding: 5px 20px 5px 50px;
   transition: all 0.3s ease-in-out;
 }
@@ -771,8 +808,8 @@ button:focus:not(:focus-visible) {
   height: 60px;
   cursor: pointer;
   display: inline-block;
-  font-size: 17px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   box-shadow: none;
   outline: none;
   border: 1px solid var(--color-primary-2);
@@ -1029,6 +1066,12 @@ button:focus:not(:focus-visible) {
 .mady-template-layout3 .mady-form-area .form-group .strong-password p {
   margin-top: 10px;
 }
+.mady-template-layout3 .mady-form-area .form-group input::-ms-input-placeholder {
+  color: #d1d1d1;
+}
+.mady-template-layout3 .mady-form-area .form-group input::placeholder {
+  color: #d1d1d1;
+}
 .mady-template-layout3 .mady-form-area .form-control {
   height: 60px;
   border: 2px solid;
@@ -1036,7 +1079,7 @@ button:focus:not(:focus-visible) {
   background-color: #F1F4F7;
   margin-bottom: 20px;
   font-size: 16px;
-  color: #A5A5A5;
+  color: var(--color-title);
   padding: 5px 20px 5px 50px;
   border-radius: 45px;
   transition: all 0.3s ease-in-out;
@@ -1050,8 +1093,8 @@ button:focus:not(:focus-visible) {
   height: 60px;
   cursor: pointer;
   display: inline-block;
-  font-size: 17px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   box-shadow: none;
   outline: none;
   border: 1px solid var(--color-primary-3);
@@ -1405,6 +1448,12 @@ button:focus:not(:focus-visible) {
 .mady-template-layout4 .mady-form-area .form-group .strong-password p {
   margin-top: 10px;
 }
+.mady-template-layout4 .mady-form-area .form-group input::-ms-input-placeholder {
+  color: #d1d1d1;
+}
+.mady-template-layout4 .mady-form-area .form-group input::placeholder {
+  color: #d1d1d1;
+}
 .mady-template-layout4 .mady-form-area .form-control {
   height: 60px;
   border: 1px solid;
@@ -1413,7 +1462,7 @@ button:focus:not(:focus-visible) {
   box-shadow: none;
   margin-bottom: 20px;
   font-size: 16px;
-  color: #74787C;
+  color: var(--color-title);
   padding: 15px 30px 5px;
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
@@ -1442,8 +1491,8 @@ button:focus:not(:focus-visible) {
   height: 60px;
   cursor: pointer;
   display: inline-block;
-  font-size: 17px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   box-shadow: none;
   outline: none;
   border: 1px solid var(--color-primary-4);
@@ -1674,7 +1723,7 @@ button:focus:not(:focus-visible) {
   display: block;
   background-color: transparent;
   border: 0;
-  color: #9D9FAC;
+  color: #575757;
 }
 .mady-template-layout5 .mady-form-area .form-group .eye-trigger {
   position: absolute;
@@ -1711,6 +1760,12 @@ button:focus:not(:focus-visible) {
 .mady-template-layout5 .mady-form-area .form-group .strong-password p {
   margin-top: 10px;
 }
+.mady-template-layout5 .mady-form-area .form-group input::-ms-input-placeholder {
+  color: #575757;
+}
+.mady-template-layout5 .mady-form-area .form-group input::placeholder {
+  color: #575757;
+}
 .mady-template-layout5 .mady-form-area .form-control {
   height: 60px;
   border: 1px solid;
@@ -1719,7 +1774,7 @@ button:focus:not(:focus-visible) {
   box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.05);
   margin-bottom: 20px;
   font-size: 16px;
-  color: #74787C;
+  color: var(--color-title);
   padding: 5px 20px 5px 50px;
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
@@ -1732,8 +1787,8 @@ button:focus:not(:focus-visible) {
   height: 60px;
   cursor: pointer;
   display: inline-block;
-  font-size: 17px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   box-shadow: none;
   outline: none;
   border: 1px solid var(--color-primary-5);
