@@ -1,6 +1,67 @@
 (function($) {
     "use strict";
 
+
+    function isGood(signupPassword) {
+        var password_strength = document.getElementById("password-text");
+  
+        //TextBox left blank.
+        if (signupPassword.length == 0) {
+          password_strength.innerHTML = "";
+          return;
+        }
+  
+        //Regular Expressions.
+        var regex = new Array();
+        regex.push("[A-Z]"); //Uppercase Alphabet.
+        regex.push("[a-z]"); //Lowercase Alphabet.
+        regex.push("[0-9]"); //Digit.
+        regex.push("[$@$!%*#?&]"); //Special Character.
+  
+        var passed = 0;
+  
+        //Validate for each Regular Expression.
+        for (var i = 0; i < regex.length; i++) {
+          if (new RegExp(regex[i]).test(signupPassword)) {
+            passed++;
+          }
+        }
+
+        if(signupPassword.length > 7){
+            passed++;
+          }
+  
+        //Display status.
+        var strength = "";
+        switch (passed) {
+          case 0:
+          case 1:
+            strength = "<span class='progress-bar bg-danger' style='width: 20%'><span class='progress-bar-text'>Very Weak Password</span></span>";
+            break;
+          case 2:
+            strength = "<span class='progress-bar bg-warning' style='width: 40%'><span class='progress-bar-text'>Weak Password</span></span>";
+            break;
+          case 3:
+            strength = "<span class='progress-bar bg-primary' style='width: 60%'><span class='progress-bar-text'>Medium Password</span></span>";
+            break;
+          case 4:
+            strength = "<span class='progress-bar bg-info' style='width: 80%'><span class='progress-bar-text'>Good Password</span></span>";
+            break;
+          case 5:
+            strength = "<span class='progress-bar bg-success' style='width: 100%'><span class='progress-bar-text'>Strong Password</span></span>";
+            break;
+  
+        }
+        password_strength.innerHTML = strength;
+  
+    }
+
+    $('#signupPassword').on('input', function() {
+        isGood(this.value);
+    });
+
+      //gggggggggg
+
     var current_fs, next_fs, previous_fs; //form
     var opacity;
     var current = 1;

@@ -14,7 +14,9 @@
     <!-- Fontawesome CSS -->
     <link rel="stylesheet" href="css/vendor/css/all.min.css">
     <!-- Google Web Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/app.css">
 </head>
@@ -23,24 +25,30 @@
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <section class="mady-template-layout1">
-        <div class="mady-bg-img fxt-template-animation">
-            <img src="img/figure/bg1-l.jpg" alt="bg-image">
-            <div class="mady-animated-shape">
-                <img src="img/elements/shape-1.png" alt="shape-image">
-            </div>
-        </div>
-        <div class="mady-content">
-            <div class="mady-header">
-                <a href="login-1.html" class="mady-logo"><img src="img/logo-1.svg" alt="Logo"></a>
-                <!-- <div class="mady-page-switcher">
-                    <a href="login-1.html" class="switcher-text1 active">Log In</a>
-                    <a href="register-1.html" class="switcher-text1">Register</a>
-                </div> -->
-            </div>
+    <section class="mady-template-layout4">
+        <div class="mady-shape-wrap fxt-template-animation">
+            <div class="mady-shape-holder mady-shape-1">
+                <img src="img/elements/shape-2.png" alt="Shape">
+            </div>       
+            <div class="mady-shape-holder mady-shape-2">
+                <img src="img/elements/shape-3.png" alt="Shape">
+            </div>       
+            <div class="mady-shape-holder mady-shape-3">
+                <img src="img/elements/shape-4.png" alt="Shape">
+            </div>       
+            <div class="mady-shape-holder mady-shape-4">
+                <img src="img/elements/shape-5.png" alt="Shape">
+            </div>       
+        </div>   
+        <div class="mady-header">
+            <a href="login-4.html" class="mady-logo"><img src="img/logo-4.svg" alt="Logo"></a>
+            <p class="mady-page-switcher">Don't have an account?<a href="register-4.html">Register</a></p>
+        </div>    
+        <div class="mady-content">            
             <div class="mady-form-area">
+                <div class="mady-page-icon"><i class="fa-regular fa-paper-plane"></i></div>
                 <h2 class="mady-title">Two-Step Verification</h2>
-                <p>We’ve sent a verification code to +9*******558</p>
+                <p class="mady-description">We’ve sent a verification code to +9*******558</p>                
                 <form method="POST" id="otp-form">
                     <div class="form-group">
                         <label for="email" class="mady-input-label">Enter OTP Code Here</label>
@@ -54,26 +62,10 @@
                     <div class="form-group">
                         <button type="submit" class="mady-btn-fill">Verify It</button>
                     </div>
-                </form>
+                </form> 
                 <div class="mady-resend-code">
                     <p>Not received your code? <a class="mady-resennd-trigger" href="#">Resend code</a> OR <a class="mady-resennd-trigger" href="#">Call</a></p>
                 </div>
-            </div>
-            <div class="mady-footer">
-                <ul class="mady-socials">
-                    <li>
-                        <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                    </li>
-                    <li>
-                        <a href="#" title="twitter"><i class="fa-brands fa-x-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href="#" title="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
-                    </li>
-                    <li>
-                        <a href="#" title="instagram"><i class="fa-brands fa-instagram"></i></a>
-                    </li>
-                </ul>                 
             </div>
         </div>
     </section>

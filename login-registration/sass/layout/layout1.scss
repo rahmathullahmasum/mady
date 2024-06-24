@@ -96,7 +96,6 @@
 			border-color: #DED9D9;
 			border-radius: 3px;
 			background-color: #F6F6F6;
-			margin-bottom: 30px;
 			@media screen and (max-width: 991px) {
 				height: 55px;
 			}
@@ -119,7 +118,8 @@
 		.mady-divider-area {
 			display: flex;
 			align-items: center;
-			margin-bottom: 35px;
+			margin-top: 25px;
+			margin-bottom: 15px;
 			.mady-divider-line {
 				height: 1px;
 				width: 100%;
@@ -177,13 +177,12 @@
 			font-weight: 500;
 			box-shadow: none;
 			outline: none;
-			border: 0;
+			border: 1px solid var(--color-primary-1);
 			color: #fff;
 			border-radius: 3px;
 			background-color: var(--color-primary-1);
 			padding: 10px 36px;
 			width: 100%;
-			margin-bottom: 40px;
 			transition: all 0.3s ease-in-out;
 			@media screen and (max-width: 991px) {
 				height: 55px;
@@ -191,14 +190,45 @@
 			@media screen and (max-width: 767px) {
 				height: 50px;
 			}
+			&:hover {
+				background-color: transparent;
+				color: var(--color-primary-1);
+			}
+		}
+		.mady-checkbox {
+			margin-top: 30px;
+		}
+		.form-check-input {
+			border-color: #555555;
+			background-color: transparent;
+			&:focus {
+				box-shadow: none;
+				outline: none;
+			}
+		}
+		.form-check-label {
+			font-size: 18px;
+			padding-left: 2px;
+			a {
+				color: #20282D;
+				transition: all 0.3s ease-in-out;
+				&:hover {
+					color: var(--color-primary-1);
+				}
+			}
 		}
     }
 	.mady-forgot-text {
+		margin-top: 35px;
 		font-size: 18px;		
 		display: block;
 		text-align: center;
 		a {
 			color: var(--color-body);
+			transition: all 0.3s ease-in-out;
+			&:hover {
+				color: var(--color-primary-1);
+			}
 		}
 	}
 	.mady-footer {
@@ -217,13 +247,16 @@
 		margin-bottom: 0;
 		a {
 			color: var(--color-title);
+			transition: all 0.3s ease-in-out;
+			&:hover {
+				color: var(--color-primary-1);
+			}
 		}
 	}
     .mady-input-row {
         display: flex;
         gap: 30px;
         flex-wrap: wrap;
-        margin-bottom: 30px;
         .mady-input-col {
             padding: 10px 5px;
             text-align: center;
@@ -256,6 +289,16 @@
 					color: #ffffff;
 					border-color: #14171A;
 				}
+			}
+		}
+	}
+	.mady-resend-code {
+		margin-top: 30px;
+		.mady-resennd-trigger {
+			color: #20282D;
+			transition: all 0.3s ease-in-out;
+			&:hover {
+				color: var(--color-primary-1);
 			}
 		}
 	}
@@ -358,7 +401,7 @@
 			border-color: #DED9D9;
 			border-radius: 3px;
 			background-color: #F6F6F6;
-			margin-bottom: 30px;
+			margin-bottom: 20px;
 			a {
 				width: 100%;
 				height: 100%;
@@ -375,7 +418,8 @@
 		.mady-divider-area {
 			display: flex;
 			align-items: center;
-			margin-bottom: 35px;
+			margin-bottom: 30px;
+			margin-top: 30px;
 			.mady-divider-line {
 				height: 1px;
 				width: 100%;
@@ -420,17 +464,43 @@
 				border: 0;
 				color: #9D9FAC;
 			}
+			.strong-password {
+				position: relative;
+				margin-top: 35px;
+				.progress-bar-wrap {
+					height: 2px;
+					background-color: #D9D9D9;
+					width: 100%;
+					.progress-bar {
+						height: 2px;
+					}
+					.progress-bar-text {
+						position: absolute;
+						bottom: 100%;
+						right: 0;
+						font-size: 12px;
+						color: #396EF6;
+					}
+				}
+				p {
+					margin-top: 10px;
+				}
+			}
 		}
 		.form-control {
 			height: 60px;
-			border: 1px solid;
-			border-color: #F1F1F1;
-			background-color: #ffffff;
-			box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.05);
+			border: 2px solid;
+			border-color: #F1F4F7;
+			background-color: #F1F4F7;
 			margin-bottom: 20px;
 			font-size: 16px;
 			color: #A5A5A5;
 			padding: 5px 20px 5px 50px;
+			transition: all 0.3s ease-in-out;
+			&:focus {
+				background-color: transparent;
+				box-shadow: none;
+			}
 		}
 		.mady-btn-fill {
 			// font-family: 'Roboto', sans-serif;
@@ -441,14 +511,17 @@
 			font-weight: 500;
 			box-shadow: none;
 			outline: none;
-			border: 0;
+			border: 1px solid var(--color-primary-2);
 			color: #fff;
 			border-radius: 3px;
 			background-color: var(--color-primary-2);
 			padding: 10px 36px;
-			margin-bottom: 20px;
 			width: 100%;
 			transition: all 0.3s ease-in-out;
+			&:hover {
+				background-color: transparent;
+				color: var(--color-primary-2);
+			}
 		}
     }
 	.mady-forgot-text {
@@ -457,7 +530,11 @@
 		display: block;
 		text-align: center;
 		a {
-			color: var(--color-primary-2);
+			color: #3461FF;
+			transition: all 0.3s ease-in-out;
+			&:hover {
+				color: var(--color-primary-2);
+			}
 		}
 	}
 	.mady-footer {
@@ -476,13 +553,15 @@
 		margin-bottom: 0;
 		a {
 			color: var(--color-primary-2);
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 	}
     .mady-input-row {
         display: flex;
         gap: 30px;
         flex-wrap: wrap;
-        margin-bottom: 30px;
         .mady-input-col {
             padding: 10px 5px;
             text-align: center;
@@ -490,6 +569,16 @@
             flex-grow: 1;
         }
     }
+	.mady-resend-code {
+		margin-top: 30px;
+		.mady-resennd-trigger {
+			color: #20282D;
+			transition: all 0.3s ease-in-out;
+			&:hover {
+				color: var(--color-primary-2);
+			}
+		}
+	}
 }
 
 /*========================================================================
@@ -528,6 +617,18 @@
         flex-direction: column;
         justify-content: space-between;
 		gap: 50px;
+		@media only screen and (max-width: 767px) {
+			gap: 40px;
+			padding: 40px 20px;
+		}
+		@media only screen and (max-width: 575px) {
+			gap: 30px;
+			padding: 30px 15px;
+		}
+		@media only screen and (max-width: 479px) {
+			gap: 20px;
+			padding: 20px 12px;
+		}
     }
 	.mady-header {
 		text-align: center;
@@ -536,21 +637,48 @@
 		padding: 80px;
 		background-color: #ffffff;
 		border-radius: 25px;
+		@media only screen and (max-width: 767px) {
+			padding: 70px 50px;
+		}
+		@media only screen and (max-width: 575px) {
+			padding: 50px 30px;
+		}
+		@media only screen and (max-width: 479px) {
+			padding: 40px 20px;
+		}
 		.mady-title {
 			margin-bottom: 25px;
 		}
+		.mady-login-option-wrap {
+			display: flex;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			margin-right: -10px;
+			margin-left: -10px;
+		}
 		.mady-login-option {
-			font-size: 15px;
-			width: 100%;
-			height: 60px;
-			border: 1px solid;
-			border-color: #DED9D9;
-			border-radius: 45px;
-			background-color: #F6F6F6;
+			display: inline-block;
+			flex: 0 0 50%;
+			max-width: 50%;
+			padding-left: 10px;
+			padding-right: 10px;
+			margin-top: 20px;
+			@media only screen and (max-width: 767px) {
+				flex: 0 0 100%;
+				max-width: 100%;
+			}			
 			a {
-				padding: 5px 18px;
+				font-size: 15px;
 				width: 100%;
-				height: 100%;
+				height: 60px;
+				border: 1px solid;
+				border-color: #DED9D9;
+				border-radius: 45px;
+				background-color: #F6F6F6;
+				padding: 5px 15px;
 				color: var(--color-title);
 				display: flex;
 				align-items: center;
@@ -564,7 +692,7 @@
 		.mady-divider-area {
 			display: flex;
 			align-items: center;
-			margin-bottom: 35px;
+			margin-top: 20px;
 			.mady-divider-line {
 				height: 1px;
 				width: 100%;
@@ -609,18 +737,45 @@
 				border: 0;
 				color: #9D9FAC;
 			}
+			.strong-password {
+				position: relative;
+				margin-top: 35px;
+				.progress-bar-wrap {
+					height: 2px;
+					background-color: #D9D9D9;
+					width: 100%;
+					.progress-bar {
+						height: 2px;
+					}
+					.progress-bar-text {
+						position: absolute;
+						bottom: 100%;
+						right: 0;
+						font-size: 12px;
+						color: #396EF6;
+					}
+				}
+				p {
+					margin-top: 10px;
+				}
+			}
 		}
 		.form-control {
 			height: 60px;
-			border: 1px solid;
-			border-color: #F1F1F1;
-			background-color: #ffffff;
-			box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.05);
+			border: 2px solid;
+			border-color: #F1F4F7;
+			background-color: #F1F4F7;
 			margin-bottom: 20px;
 			font-size: 16px;
 			color: #A5A5A5;
 			padding: 5px 20px 5px 50px;
 			border-radius: 45px;
+			transition: all 0.3s ease-in-out;
+			&:focus {
+				background-color: transparent;
+				border-color: #F1F4F7;
+				box-shadow: none;
+			}
 		}
 		.mady-btn-fill {
 			// font-family: 'Roboto', sans-serif;
@@ -631,7 +786,7 @@
 			font-weight: 500;
 			box-shadow: none;
 			outline: none;
-			border: 0;
+			border: 1px solid var(--color-primary-3);
 			color: #fff;
 			border-radius: 45px;
 			background-color: var(--color-primary-3);
@@ -639,16 +794,23 @@
 			width: 100%;
 			margin-bottom: 0;
 			transition: all 0.3s ease-in-out;
+			&:hover {
+				background-color: transparent;
+				color: var(--color-primary-3);
+			}
 		}
     }
 	.mady-forgot-text {
-		margin-top: 30px;
-		margin-bottom: 30px;
+		margin-top: 25px;
 		font-size: 18px;		
 		display: block;
 		text-align: center;
 		a {
-			color: var(--color-body);
+			color: #3461FF;
+			transition: all 0.3s ease-in-out;
+			&:hover {
+				color: var(--color-primary-3);
+			}
 		}
 	}
 	.mady-footer {
@@ -664,6 +826,11 @@
 		color: #ffffff;
 		a {
 			color: #ffffff;
+			text-decoration: underline;
+			transition: all 0.3s ease-in-out;
+			&:hover {
+				color: var(--color-primary-3);
+			}
 		}
 	}
     .mady-input-row {
@@ -676,7 +843,17 @@
             flex-basis: 0;
             flex-grow: 1;
         }
-    }	
+    }
+	.mady-resend-code {
+		margin-top: 30px;
+		.mady-resennd-trigger {
+			color: #20282D;
+			transition: all 0.3s ease-in-out;
+			&:hover {
+				color: var(--color-primary-3);
+			}
+		}
+	}	
 }
 /*========================================================================
 4. Demo Layout One
@@ -698,6 +875,9 @@
 		right: 0;
 		z-index: -1;
 		overflow: hidden;
+		@media only screen and (max-width: 991px) {
+			display: none;
+		}
 		.mady-shape-holder {
 			position: absolute;
 			transition: all 1s ease-in-out;
@@ -772,9 +952,26 @@
 		padding: 100px;
 		background-color: #ffffff;
 		box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.06);
+		@media only screen and (max-width: 991px) {
+			padding: 90px;
+			border-radius: 45px;
+		}
+		@media only screen and (max-width: 767px) {
+			padding: 70px;
+			border-radius: 35px;
+		}
+		@media only screen and (max-width: 575px) {
+			padding: 50px;
+			border-radius: 25px;
+		}
+		@media only screen and (max-width: 479px) {
+			padding: 30px;
+			border-radius: 15px;
+		}
 		.mady-page-icon {
 			height: 140px;
 			width: 140px;
+			font-size: 40px;			
 			border-radius: 50%;
 			position: absolute;
 			top: -70px;
@@ -785,10 +982,33 @@
 			justify-content: center;
 			background-color: #ffffff;
 			color: var(--color-primary-4);
-			font-size: 40px;			
 			box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.01);
 			i {
 				font-weight: 400;
+			}
+			@media only screen and (max-width: 991px) {
+				height: 120px;
+				width: 120px;
+				font-size: 36px;
+				top: -60px;	
+			}
+			@media only screen and (max-width: 767px) {
+				height: 100px;
+				width: 100px;
+				font-size: 32px;
+				top: -50px;
+			}
+			@media only screen and (max-width: 575px) {
+				height: 80px;
+				width: 80px;
+				font-size: 28px;
+				top: -40px;
+			}
+			@media only screen and (max-width: 479px) {
+				height: 60px;
+				width: 60px;
+				font-size: 24px;
+				top: -30px;
 			}
 		}
 		.mady-title {
@@ -801,18 +1021,36 @@
 			margin-left: auto;
 			margin-right: auto;
 		}
+		.mady-login-option-wrap {
+			display: flex;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			margin-right: -12px;
+			margin-left: -12px;
+		}
 		.mady-login-option {
-			font-size: 15px;
-			width: 100%;
-			height: 60px;
-			border: 1px solid;
-			border-color: #DED9D9;
-			border-radius: 5px;
-			background-color: #F6F6F6;
+			display: inline-block;
+			flex: 0 0 50%;
+			max-width: 50%;
+			padding-left: 12px;
+			padding-right: 12px;
+			margin-top: 24px;
+			@media only screen and (max-width: 767px) {
+				flex: 0 0 100%;
+				max-width: 100%;
+			}			
 			a {
+				border: 1px solid;
+				border-color: #F1F4F7;
+				border-radius: 5px;
+				background-color: #F1F4F7;
+				font-size: 15px;
 				padding: 5px 18px;
+				height: 60px;
 				width: 100%;
-				height: 100%;
 				color: var(--color-title);
 				display: flex;
 				align-items: center;
@@ -837,7 +1075,7 @@
 				font-size: 15px;
 				color: var(--color-title);
 			}
-		}
+		}		
 		.mady-input-label {
 			font-size: 15px;
 			color: var(--color-title);
@@ -871,19 +1109,79 @@
 				border: 0;
 				color: #9D9FAC;
 			}
+			.strong-password {
+				position: relative;
+				margin-top: 35px;
+				.progress-bar-wrap {
+					height: 2px;
+					background-color: #D9D9D9;
+					width: 100%;
+					.progress-bar {
+						height: 2px;
+					}
+					.progress-bar-text {
+						position: absolute;
+						bottom: 100%;
+						right: 0;
+						font-size: 12px;
+						color: #396EF6;
+					}
+				}
+				p {
+					margin-top: 10px;
+				}
+			}
 		}
 		.form-control {
 			height: 60px;
 			border: 1px solid;
-			border-color: #F1F1F1;
-			background-color: #ffffff;
-			box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.05);
+			border-color: #F1F4F7;
+			background-color: #F1F4F7;
+			box-shadow: none;
 			margin-bottom: 20px;
 			font-size: 16px;
-			color: #A5A5A5;
-			padding: 5px 20px;
+			color: #74787C;
+			padding: 15px 30px 5px;
 			border-radius: 5px;
+			transition: all 0.3s ease-in-out;
+			&:focus {
+				background-color: transparent;
+				border-color: #E6E7E8;
+				+ .mady-placeholder {
+					transform: translateY(-30px);
+					color: #5F4ADE;
+					opacity: 1;
+					font-size: 14px;
+				}
+			}
 		}
+		.mady-placeholder {
+			position: absolute;
+			top: 50%;
+			left: 30px;
+			transform: translateY(-50%);
+			color: #74787C;
+			font-size: 16px;
+			pointer-events: none;
+			transition: all 0.3s ease-in-out;
+		}
+		// input:focus 
+		// input[placeholder]::-ms-input-placeholder {
+		// 	color: #74787C;
+		// 	font-size: 16px;
+		// 	transform: translateY(-5px);
+		// 	transition: transform 0.3s ease-in-out;
+		// }
+		
+		// input:focus::placeholder {
+		// 	opacity: 1;
+		// 	text-indent: 1;
+		// }
+		// input[placeholder]:focus::placeholder,
+		// input[placeholder]:focus::-webkit-input-placeholder {
+		// 	transform: translateY(-20px);
+		// 	color: #5F4ADE;
+		// }
 		.mady-btn-fill {
 			// font-family: 'Roboto', sans-serif;
 			height: 60px;
@@ -893,7 +1191,7 @@
 			font-weight: 500;
 			box-shadow: none;
 			outline: none;
-			border: 0;
+			border: 1px solid var(--color-primary-4);
 			color: #fff;
 			border-radius: 5px;
 			background-color: var(--color-primary-4);
@@ -901,6 +1199,22 @@
 			width: 100%;
 			margin-bottom: 0;
 			transition: all 0.3s ease-in-out;
+			&:hover {
+				background-color: transparent;
+				color: var(--color-primary-4);
+			}
+		}
+		.form-check-input {
+			border-color: #DFDFDF;
+			background-color: transparent;
+			&:focus {
+				box-shadow: none;
+				outline: none;
+			}
+		}
+		.form-check-label {
+			padding-left: 2px;
+			color: #20282D;
 		}
 		.mady-forgot-text {
 			font-size: 15px;		
@@ -908,6 +1222,10 @@
 			text-align: center;
 			a {
 				color: var(--color-body);
+				transition: all 0.3s ease-in-out;
+				&:hover {
+					color: var(--color-primary-4);
+				}
 			}
 		}
     }
@@ -923,6 +1241,10 @@
 			color: #20282D;
 			font-weight: 600;
 			text-decoration: underline;
+			transition: all 0.3s ease-in-out;
+			&:hover {
+				color: var(--color-primary-4);
+			}
 		}
 	}
     .mady-input-row {
@@ -935,5 +1257,326 @@
             flex-basis: 0;
             flex-grow: 1;
         }
-    }	
+    }
+	.mady-resend-code {
+		margin-top: 30px;
+		.mady-resennd-trigger {
+			color: #20282D;
+			transition: all 0.3s ease-in-out;
+			&:hover {
+				color: var(--color-primary-4);
+			}
+		}
+	}	
+}
+
+/*========================================================================
+4. Demo Layout One
+=========================================================================*/
+.mady-template-layout5 {
+	min-height: 100vh;
+	// height: 100%;
+    position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    .mady-bg-img {
+		height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -2;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .mady-content {
+		padding: 50px 30px;
+		// position: absolute;
+		// z-index: 2;
+		// top: 0;
+		// bottom: 0;
+		// left: 50%;
+		// transform: translateX(-50%);
+		width: 696px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+		gap: 50px;
+    }
+	.mady-header {
+		text-align: center;
+	}
+    .mady-form-area {
+		padding: 80px;
+		background-color: #110E0E;
+		border-radius: 25px;
+		@media only screen and (max-width: 767px) {
+			padding: 50px;
+		}
+		@media only screen and (max-width: 575px) {
+			padding: 40px;
+		}
+		@media only screen and (max-width: 479px) {
+			padding: 30px;
+		}
+		.mady-title {
+			text-align: center;
+			margin-bottom: 10px;
+			color: #ffffff;
+		}
+		.mady-description {
+			color: #A8ABAD;
+			text-align: center;
+			max-width: 364px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 35px;
+		}
+		.mady-login-option-wrap {
+			display: flex;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			margin-right: -6px;
+			margin-left: -6px;
+			margin-top: 10px;
+		}
+		.mady-login-option {
+			display: inline-block;
+			flex: 0 0 25%;
+			max-width: 25%;
+			padding-left: 6px;
+			padding-right: 6px;
+			margin-top: 12px;
+			@media only screen and (max-width: 767px) {
+				flex: 0 0 50%;
+				max-width: 50%;
+			}
+			a {
+				font-size: 15px;
+				border: 1px solid;
+				border-color: #262626;
+				background-color: #262626;
+				border-radius: 5px;
+				padding: 5px 18px;
+				height: 50px;
+				width: 100%;
+				color: #ffffff;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 10px;
+				transition: all 0.3s ease-in-out;
+				&.mady-facebook {
+					&:hover {
+						background-color: var(--facebook);
+					}
+				}
+				&.mady-google {
+					&:hover {
+						background-color: var(--google);
+					}
+				}
+				&.mady-twitter {
+					&:hover {
+						background-color: var(--twitter);
+					}
+				}
+				&.mady-linkedin {
+					&:hover {
+						background-color: var(--linkedin);
+					}
+				}
+			}
+		}
+		.mady-divider-area {
+			display: flex;
+			align-items: center;
+			margin-bottom: 35px;
+			.mady-divider-line {
+				height: 1px;
+				width: 100%;
+				background-color: #D9D9D9;
+			}
+			.mady-divider-text {
+				margin: 0 20px;
+				font-size: 15px;
+				color: var(--color-title);
+			}
+		}
+		.mady-input-label {
+			font-size: 15px;
+			font-weight: 500;
+			margin-bottom: 10px;
+		}
+		.form-group {
+			.icon-holder {
+				position: absolute;
+				z-index: 1;
+				left: 20px;
+				top: 50%;
+				-webkit-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				transform: translateY(-50%);
+				display: block;
+				background-color: transparent;
+				border: 0;
+				color: #9D9FAC;
+			}
+			.eye-trigger {
+				position: absolute;
+				z-index: 1;
+				right: 20px;
+				top: 50%;
+				-webkit-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				transform: translateY(-50%);
+				display: block;
+				background-color: transparent;
+				border: 0;
+				color: #9D9FAC;
+			}
+			.strong-password {
+				position: relative;
+				margin-top: 35px;
+				.progress-bar-wrap {
+					height: 2px;
+					background-color: #535151;
+					width: 100%;
+					.progress-bar {
+						height: 2px;
+					}
+					.progress-bar-text {
+						position: absolute;
+						bottom: 100%;
+						right: 0;
+						font-size: 12px;
+						color: #A3A5A9;
+					}
+				}
+				p {
+					margin-top: 10px;
+				}
+			}
+		}
+		.form-control {
+			height: 60px;
+			border: 1px solid;
+			border-color: #5A5757;
+			background-color: transparent;
+			box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.05);
+			margin-bottom: 20px;
+			font-size: 16px;
+			color: #74787C;
+			padding: 5px 20px 5px 50px;
+			border-radius: 5px;
+			transition: all 0.3s ease-in-out;
+			&:focus {
+				background-color: #F1F4F7;
+				border-color: #F1F4F7;
+			}
+		}
+		.mady-btn-fill {
+			// font-family: 'Roboto', sans-serif;
+			height: 60px;
+			cursor: pointer;
+			display: inline-block;
+			font-size: 17px;
+			font-weight: 500;
+			box-shadow: none;
+			outline: none;
+			border: 1px solid var(--color-primary-5);
+			color: #fff;
+			border-radius: 5px;
+			background-color: var(--color-primary-5);
+			padding: 10px 36px;
+			width: 100%;
+			margin-bottom: 0;
+			transition: all 0.3s ease-in-out;
+			&:hover {
+				background-color: transparent;
+			}
+		}
+		.form-check-input {
+			border-color: #555555;
+			background-color: transparent;
+			&:focus {
+				box-shadow: none;
+				outline: none;
+			}
+		}
+		.form-check-label {
+			padding-left: 2px;
+			color: #ffffff;
+		}
+		.mady-forgot-text {
+			font-size: 15px;		
+			display: block;
+			text-align: center;
+			a {
+				color: #ffffff;
+				transition: all 0.3s ease-in-out;
+				&:hover {
+					color: var(--color-primary-5);
+				}
+			}
+		}
+    }
+	// .mady-forgot-text {
+	// 	margin-top: 30px;
+	// 	margin-bottom: 30px;
+	// 	font-size: 18px;		
+	// 	display: block;
+	// 	text-align: center;
+	// 	a {
+	// 		color: var(--color-body);
+	// 	}
+	// }
+	.mady-footer {
+		text-align: center;
+	}
+	.mady-page-switcher {
+		font-size: 15px;
+		display: inline-flex;
+		gap: 5px;
+		align-items: center;
+		flex-wrap: wrap;
+		margin-bottom: 0;
+		color: #ffffff;
+		a {
+			color: var(--color-primary-5);
+			transition: all 0.3s ease-in-out;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+    .mady-input-row {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        .mady-input-col {
+            padding: 10px 5px;
+            text-align: center;
+            flex-basis: 0;
+            flex-grow: 1;
+        }
+    }
+	.mady-resend-code {
+		p {
+			color: #ffffff;
+		}
+		.mady-resennd-trigger {
+			color: var(--color-primary-5);
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}	
 }

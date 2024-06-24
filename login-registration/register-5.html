@@ -25,29 +25,43 @@
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <section class="mady-template-layout3">
+    <section class="mady-template-layout5">
         <div class="mady-bg-img fxt-template-animation">
-            <img src="img/figure/bg3-1.jpg" alt="bg-image">
+            <img src="img/figure/bg5-1.jpg" alt="bg-image">
         </div>       
         <div class="mady-content">
             <div class="mady-header">
-                <a href="login-1.html" class="mady-logo"><img src="img/logo-3.svg" alt="Logo"></a>
+                <a href="login-1.html" class="mady-logo"><img src="img/logo-5.svg" alt="Logo"></a>
             </div>
             <div class="mady-form-area">
-                <h2 class="mady-title">Register Your Account</h2>
-                <p>Inter your valid email address and password to register your account</p>                
+                <h2 class="mady-title">Log into your Account</h2>
+                <p class="mady-description">Inter your email address and password to get access your account</p>                
                 <form method="POST">
-                    <div class="form-group">
-                        <div class="position-relative">
-                            <input type="text" class="form-control" name="name" placeholder="Full Name" required="required">
-                            <div class="icon-holder">
-                                <i class="fa-light fa-user"></i>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <div class="position-relative">
+                                    <input type="text" class="form-control" name="first-name" placeholder="First Name" required="required">
+                                    <div class="icon-holder">
+                                        <i class="fa-light fa-user"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <div class="position-relative">
+                                    <input type="text" class="form-control" name="last-name" placeholder="Last Name" required="required">
+                                    <div class="icon-holder">
+                                        <i class="fa-light fa-user"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="position-relative">
-                            <input type="email" class="form-control" name="email" placeholder="name@company name.com" required="required">
+                            <input type="email" class="form-control" name="email" placeholder="Email Address" required="required">
                             <div class="icon-holder">
                                 <i class="fa-light fa-envelope"></i>
                             </div>
@@ -55,7 +69,7 @@
                     </div>
                     <div class="form-group">
                         <div class="position-relative">
-                            <input id="signupPassword" type="password" class="form-control" name="password" placeholder="Enter password" required="required">
+                            <input id="signupPassword" type="password" class="form-control" name="password" placeholder="Enter password" required="required" onkeyup="isGood(this.value)">
                             <div class="icon-holder">
                                 <i class="fa-regular fa-lock"></i>
                             </div>
@@ -63,26 +77,43 @@
                                 <i toggle="#signupPassword" class="toggle-password field-icon fa-light fa-eye-slash"></i>
                             </div>
                         </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="position-relative">
+                            <input id="signupPassword2" type="password" class="form-control" name="password" placeholder="Enter password" required="required" onkeyup="isGood(this.value)">
+                            <div class="icon-holder">
+                                <i class="fa-regular fa-lock"></i>
+                            </div>
+                            <div class="eye-trigger">
+                                <i toggle="#signupPassword2" class="toggle-password field-icon fa-light fa-eye-slash"></i>
+                            </div>                            
+                        </div>
                         <div class="strong-password">
                             <div class="help-block progress-bar-wrap" id="password-text"></div>
                             <p>Minimum 8 characters long and containing at least one numeric, uppercase, lowercase, and special character.</p>
                         </div>
                     </div>
                     <div class="form-group">
-                        <button type="submit" class="mady-btn-fill">Register Account</button>
+                        <button type="submit" class="mady-btn-fill">REGISTER</button>
                     </div>
                 </form>
                 <div class="mady-login-option-wrap">
                     <div class="mady-login-option">
-                        <a href="#"><div class="icon-holder"><img src="img/elements/g-icon.png" alt="G Icon"></div>Use Google Account</a>
+                        <a class="mady-facebook" href="#">FACEBOOK</a>
                     </div>
                     <div class="mady-login-option">
-                        <a href="#"><div class="icon-holder"><img src="img/elements/f-icon.png" alt="F Icon"></div> Sign up with Facebook</a>
+                        <a class="mady-google" href="#">GOOGLE</a>
+                    </div>
+                    <div class="mady-login-option">
+                        <a class="mady-twitter" href="#">TWITTER</a>
+                    </div>
+                    <div class="mady-login-option">
+                        <a class="mady-linkedin" href="#">LINKEDIN</a>
                     </div>
                 </div>
             </div>
             <div class="mady-footer">
-                <p class="mady-page-switcher">Already have an account?<a href="login-3.html">Log in now!</a></p>               
+                <p class="mady-page-switcher">Already have an account?<a href="login-5.html">Log in now!</a></p>               
             </div>
         </div>
     </section>

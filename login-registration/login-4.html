@@ -42,7 +42,7 @@
         </div>   
         <div class="mady-header">
             <a href="login-4.html" class="mady-logo"><img src="img/logo-4.svg" alt="Logo"></a>
-            <p class="mady-page-switcher">Don't have an account?<a href="register-4.html">Register ppp pppp pppp ppp pp</a></p>
+            <p class="mady-page-switcher">Don't have an account?<a href="register-4.html">Register</a></p>
         </div>    
         <div class="mady-content">            
             <div class="mady-form-area">
@@ -52,13 +52,15 @@
                 <form method="POST">
                     <div class="form-group">
                         <div class="position-relative">
-                            <input type="email" class="form-control" name="email" placeholder="name@company name.com" required="required">
+                            <input id="email" type="email" class="form-control" name="email" required="required">
+                            <label for="email" class="mady-placeholder">Enter Email Address</label>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="form-group">
                             <div class="position-relative">
-                                <input id="signupPassword" type="password" class="form-control" name="password" placeholder="Enter password" required="required">
+                                <input id="signupPassword" type="password" class="form-control" name="password" required="required">
+                                <label for="signupPassword" class="mady-placeholder">Enter password</label>
                                 <div class="eye-trigger">
                                     <i toggle="#signupPassword" class="toggle-password field-icon fa-light fa-eye-slash"></i>
                                 </div>
@@ -69,7 +71,7 @@
                         <button type="submit" class="mady-btn-fill">Log in</button>
                     </div>
                     <div class="form-group">
-                        <div class="d-flex justify-content-between align-items-center gap-1 mt-4 mb-4">
+                        <div class="d-flex justify-content-between align-items-center gap-1 mt-4">
                             <div class="mady-checkbox">
                                 <input class="form-check-input" type="checkbox" value="" id="agreeCheck">
                                 <label class="form-check-label" for="agreeCheck">Remember me</label>
@@ -80,7 +82,7 @@
                         </div>
 					</div>
                 </form>                
-                <div class="d-flex gap-4">
+                <div class="mady-login-option-wrap">
                     <div class="mady-login-option">
                         <a href="#"><div class="icon-holder"><img src="img/elements/g-icon.png" alt="G Icon"></div>Use Google Account</a>
                     </div>
