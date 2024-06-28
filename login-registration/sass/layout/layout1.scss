@@ -83,10 +83,17 @@
 		@media screen and (max-width: 575px) {
 			padding: 40px 24px;
 		}
+		.mady-header {
+			text-align: center;
+		}
     }
     .mady-form-area {
 		.mady-title {
 			margin-bottom: 25px;
+		}
+		.mady-description {
+			font-weight: 600;
+			line-height: 2;
 		}
 		.mady-login-option {			
 			width: 100%;
@@ -98,7 +105,8 @@
 				height: 50px;
 			}
 			a {
-				font-size: 16px;
+				font-size: 15px;
+				font-weight: 600;
 				border: 1px solid;
 				border-color: #DED9D9;
 				border-radius: 3px;
@@ -140,7 +148,7 @@
 		.mady-input-label {
 			font-size: 15px;
 			color: var(--color-title);
-			font-weight: 500;
+			font-weight: 600;
 			margin-bottom: 10px;
 		}
 		.form-group {
@@ -214,7 +222,7 @@
 			}
 		}
 		.mady-checkbox {
-			margin-top: 30px;
+			margin-top: 25px;
 		}
 		.form-check-input {
 			border-color: #555555;
@@ -274,7 +282,7 @@
 	}
     .mady-input-row {
         display: flex;
-        gap: 30px;
+        gap: 11px;
         flex-wrap: wrap;
         .mady-input-col {
             padding: 10px 5px;
@@ -387,19 +395,14 @@
             transition: all 2s ease-in-out;
         }
         &.fxt-template-animation {
-            .mady-animated-shape {
-                transform: scale3d(0, 0, 1);
-                transform-style: preserve-3d;
-                transform-origin: top right;
-            }
+            img {
+				filter: blur(20px);
+			}
         }
         &.fxt-template-animation.loaded {
-            >img {
-              border-radius: 0 0 100px 0;
-            }
-            .mady-animated-shape {
-                transform: scale3d(1, 1, 1);
-            }
+            img {
+				filter: blur(0);
+			}
         }
     }
     .mady-content {
@@ -429,21 +432,32 @@
 		@media screen and (max-width: 575px) {
 			padding: 40px 24px;
 		}
+		.mady-header {
+			text-align: center;
+		}
     }
     .mady-form-area {
 		.mady-title {
-			margin-bottom: 25px;
+			margin-bottom: 15px;
+		}
+		.mady-description {
+			margin-bottom: 35px;
+		}
+		.mady-login-option-wrap {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
 		}
 		.mady-login-option {
-			font-size: 16px;
 			width: 100%;
 			height: 60px;
-			border: 1px solid;
-			border-color: #DED9D9;
-			border-radius: 3px;
-			background-color: #F6F6F6;
-			margin-bottom: 20px;
 			a {
+				font-size: 15px;
+				font-weight: 600;
+				border: 1px solid;
+				border-color: #DED9D9;
+				border-radius: 3px;
+				background-color: #F6F6F6;
 				width: 100%;
 				height: 100%;
 				color: var(--color-title);
@@ -451,16 +465,22 @@
 				align-items: center;
 				justify-content: center;
 				gap: 15px;
+				transition: all 0.3s ease-in-out;
 				.icon-holder {
 					line-height: 1;
+				}
+				&:hover {
+					border-color: #ffffff;
+					background-color: #ffffff;
+					box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.10);
 				}
 			}
 		}
 		.mady-divider-area {
 			display: flex;
 			align-items: center;
-			margin-bottom: 30px;
-			margin-top: 30px;
+			margin-bottom: 25px;
+			margin-top: 20px;
 			.mady-divider-line {
 				height: 1px;
 				width: 100%;
@@ -516,6 +536,7 @@
 						height: 2px;
 					}
 					.progress-bar-text {
+						margin-bottom: 4px;
 						position: absolute;
 						bottom: 100%;
 						right: 0;
@@ -573,7 +594,7 @@
 		}
     }
 	.mady-forgot-text {
-		margin-bottom: 30px;
+		margin-top: 27px;
 		font-size: 18px;		
 		display: block;
 		text-align: center;
@@ -581,7 +602,7 @@
 			color: #3461FF;
 			transition: all 0.3s ease-in-out;
 			&:hover {
-				color: var(--color-primary-2);
+				color: #000000;
 			}
 		}
 	}
@@ -608,7 +629,7 @@
 	}
     .mady-input-row {
         display: flex;
-        gap: 30px;
+        gap: 11px;
         flex-wrap: wrap;
         .mady-input-col {
             padding: 10px 5px;
@@ -682,20 +703,23 @@
 		text-align: center;
 	}
     .mady-form-area {
-		padding: 80px;
+		padding: 70px 80px 80px;
 		background-color: #ffffff;
 		border-radius: 25px;
 		@media only screen and (max-width: 767px) {
-			padding: 70px 50px;
+			padding: 60px 50px 70px;
 		}
 		@media only screen and (max-width: 575px) {
-			padding: 50px 30px;
+			padding: 50px 40px 60px;
 		}
 		@media only screen and (max-width: 479px) {
-			padding: 40px 20px;
+			padding: 40px 30px 50px;
 		}
 		.mady-title {
-			margin-bottom: 25px;
+			margin-bottom: 15px;
+		}
+		.mady-description {
+			margin-bottom: 35px;
 		}
 		.mady-login-option-wrap {
 			display: flex;
@@ -720,6 +744,7 @@
 			}			
 			a {
 				font-size: 15px;
+				font-weight: 600;
 				width: 100%;
 				height: 60px;
 				border: 1px solid;
@@ -732,8 +757,14 @@
 				align-items: center;
 				justify-content: center;
 				gap: 10px;
+				transition: all 0.3s ease-in-out;
 				.icon-holder {
 					line-height: 1;
+				}
+				&:hover {
+					border-color: #ffffff;
+					background-color: #ffffff;
+					box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.10);
 				}
 			}
 		}
@@ -796,6 +827,7 @@
 						height: 2px;
 					}
 					.progress-bar-text {
+						margin-bottom: 4px;
 						position: absolute;
 						bottom: 100%;
 						right: 0;
@@ -864,7 +896,7 @@
 			color: #3461FF;
 			transition: all 0.3s ease-in-out;
 			&:hover {
-				color: var(--color-primary-3);
+				color: #000000;
 			}
 		}
 	}
@@ -909,6 +941,15 @@
 			}
 		}
 	}	
+	.mady-video-background {
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		position: absolute;
+		z-index: 0;
+	}
+
 }
 /*========================================================================
 4. Demo Layout One
@@ -981,7 +1022,7 @@
 		}
 	}
 	.mady-header {
-		padding: 50px 100px;
+		padding: 50px 100px 5px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -1067,7 +1108,7 @@
 			}
 		}
 		.mady-title {
-			margin-bottom: 25px;
+			margin-bottom: 15px;
 			text-align: center;
 		}
 		.mady-description {
@@ -1075,6 +1116,7 @@
 			max-width: 404px;
 			margin-left: auto;
 			margin-right: auto;
+			margin-bottom: 35px;
 		}
 		.mady-login-option-wrap {
 			display: flex;
@@ -1103,6 +1145,7 @@
 				border-radius: 5px;
 				background-color: #F1F4F7;
 				font-size: 15px;
+				font-weight: 600;
 				padding: 5px 18px;
 				height: 60px;
 				width: 100%;
@@ -1111,8 +1154,14 @@
 				align-items: center;
 				justify-content: center;
 				gap: 10px;
+				transition: all 0.3s ease-in-out;
 				.icon-holder {
 					line-height: 1;
+				}
+				&:hover {
+					border-color: #ffffff;
+					background-color: #ffffff;
+					box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.10);
 				}
 			}
 		}
@@ -1175,6 +1224,7 @@
 						height: 2px;
 					}
 					.progress-bar-text {
+						margin-bottom: 4px;
 						position: absolute;
 						bottom: 100%;
 						right: 0;
@@ -1282,10 +1332,10 @@
 			display: block;
 			text-align: center;
 			a {
-				color: var(--color-body);
+				color: #20282D;
 				transition: all 0.3s ease-in-out;
 				&:hover {
-					color: var(--color-primary-4);
+					color: #000000;
 				}
 			}
 		}
@@ -1386,7 +1436,7 @@
 		}
 		.mady-title {
 			text-align: center;
-			margin-bottom: 10px;
+			margin-bottom: 15px;
 			color: #ffffff;
 		}
 		.mady-description {
@@ -1514,6 +1564,7 @@
 						height: 2px;
 					}
 					.progress-bar-text {
+						margin-bottom: 4px;
 						position: absolute;
 						bottom: 100%;
 						right: 0;
@@ -1627,7 +1678,7 @@
 	}
     .mady-input-row {
         display: flex;
-        gap: 30px;
+        gap: 11px;
         flex-wrap: wrap;
         .mady-input-col {
             padding: 10px 5px;

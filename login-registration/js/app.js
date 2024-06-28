@@ -183,8 +183,8 @@
     /*-------------------------------------
     Youtube Video
     -------------------------------------*/
-    if ($.fn.YTPlayer !== undefined && $("#fxtVideo").length) {
-        $("#fxtVideo").YTPlayer({ useOnMobile: true });
+    if ($.fn.YTPlayer !== undefined && $("#madyVideo").length) {
+        $("#madyVideo").YTPlayer({ useOnMobile: true });
     }
 
     /*-------------------------------------
@@ -221,5 +221,40 @@
     $('#preloader').fadeOut('slow', function() {
         $(this).remove();
     });
+
+     /*-------------------------------------
+    TweenMax Mouse Effect
+    -------------------------------------*/
+    $(".motion-effects-wrap").mousemove(function (e) {
+        parallaxIt(e, ".motion-effects1", -100);
+        parallaxIt(e, ".motion-effects2", -200);
+        parallaxIt(e, ".motion-effects3", 100);
+        parallaxIt(e, ".motion-effects4", 200);
+        parallaxIt(e, ".motion-effects5", -50);
+        parallaxIt(e, ".motion-effects6", 50);
+    });
+
+    function parallaxIt(e, target_class, movement) {
+        var $wrap = $(e.target).parents(".motion-effects-wrap");
+        if (!$wrap.length) return;
+        var $target = $wrap.find(target_class);
+        var relX = e.pageX - $wrap.offset().left;
+        var relY = e.pageY - $wrap.offset().top;
+    
+        TweenMax.to($target, 1, {
+          x: ((relX - $wrap.width() / 2) / $wrap.width()) * movement,
+          y: ((relY - $wrap.height() / 2) / $wrap.height()) * movement,
+        });
+    }
+
+     /*---------------------------------------
+    Background Parallax
+    --------------------------------------- */
+//   if ($(".parallaxie").length) {
+//     $(".parallaxie").parallaxie({
+//       speed: 0.5,
+//       offset: 0,
+//     });
+//   }
 
 })(jQuery);

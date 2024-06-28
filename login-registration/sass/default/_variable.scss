@@ -36,7 +36,7 @@
     --transition-figure: all 0.5s cubic-bezier(0.23, 0.03, 0, 1.08);
 
     // Body Font Size
-    --body-font-size: 15px;
+    --body-font-size: 16px;
 
     // Heading Font Size
     --h1-large: 64px;
@@ -65,5 +65,19 @@
 
     @media (max-width: 575px) {
         --h1: 28px;
+    }
+
+    --h2: 30px;
+
+    @media (max-width: 991px) {
+        --h2: 28px;
+    }
+
+    @media (max-width: 767px) {
+        --h2: 26px;
+    }
+
+    @media (max-width: 575px) {
+        --h2: 24px;
     }
 }

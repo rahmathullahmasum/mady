@@ -27,6 +27,23 @@
     <![endif]-->
     <section class="mady-template-layout3">
         <div class="mady-bg-img fxt-template-animation">
+            <div class="mady-video-background">
+                <div class="mady-video">
+                    <div id="madyVideo" data-property="{
+                        videoURL:'r4KpWiK08vM', 
+                        autoPlay:true, 
+                        mute:true, 
+                        loop:true, 
+                        startAt:0, 
+                        opacity:1, 
+                        quality:'default', 
+                        showControls:false, 
+                        optimizeDisplay:true,
+                        containment:'.mady-video-background'
+                    }">
+                    </div>
+                </div>
+            </div>
             <img src="img/figure/bg3-1.jpg" alt="bg-image">
         </div>       
         <div class="mady-content">
@@ -35,7 +52,7 @@
             </div>
             <div class="mady-form-area">
                 <h2 class="mady-title">Welcome Back!</h2>
-                <p>Inter your email address and password to get access your account</p>                
+                <p class="mady-description">Inter your email address and password to get access your account</p>                
                 <form method="POST">
                     <div class="form-group">
                         <div class="position-relative">
@@ -85,6 +102,8 @@
     <script src="js/vendor/imagesloaded.pkgd.min.js"></script>
     <!-- Validator js -->
     <script src="js/vendor/validator.min.js"></script>
+    <!-- YTPlayer js -->
+    <script src="js/vendor/jquery.mb.YTPlayer.min.js"></script>
     <!-- Custom Js -->
     <script src="js/app.js"></script>
 
