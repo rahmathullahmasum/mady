@@ -65,17 +65,17 @@
     var current_fs, next_fs, previous_fs; //form
     var opacity;
     var current = 1;
-    var steps = $(".fxt-form-step").length;
+    var steps = $(".mady-form-step").length;
 
-    $('.fxt-current-step').html(current);
-    $('.fxt-total-step').html(steps);
+    $('.mady-current-step').html(current);
+    $('.mady-total-step').html(steps);
 
     setProgressBar(current);
 
     $(".next").on('click', function(e) {
         e.preventDefault();
-        current_fs = $(this).parents(".fxt-form-step");
-        next_fs = $(this).parents(".fxt-form-step").next();
+        current_fs = $(this).parents(".mady-form-step");
+        next_fs = $(this).parents(".mady-form-step").next();
 
         //show the next step
         next_fs.show();
@@ -95,13 +95,13 @@
         });
         setProgressBar(++current);
 
-        $('.fxt-current-step').html(current);
+        $('.mady-current-step').html(current);
     });
 
     $(".previous").click(function() {
 
-        current_fs = $(this).parents(".fxt-form-step");
-        previous_fs = $(this).parents(".fxt-form-step").prev();
+        current_fs = $(this).parents(".mady-form-step");
+        previous_fs = $(this).parents(".mady-form-step").prev();
 
         //show the previous step
         previous_fs.show();
@@ -121,7 +121,7 @@
             duration: 500
         });
         setProgressBar(--current);
-        $('.fxt-current-step').html(current);
+        $('.mady-current-step').html(current);
     });
 
     function setProgressBar(curStep) {
@@ -152,8 +152,8 @@
    
 
     function addNewClass() {
-        $('.fxt-template-animation').imagesLoaded().done(function(instance) {
-            $('.fxt-template-animation').addClass('loaded');
+        $('.mady-template-animation').imagesLoaded().done(function(instance) {
+            $('.mady-template-animation').addClass('loaded');
         });
     }
 
@@ -210,8 +210,8 @@
     /*-------------------------------------
 	Social Animation
 	-------------------------------------*/
-    $('#fxt-login-option >ul >li').hover(function() {
-        $('#fxt-login-option >ul >li').removeClass('active');
+    $('#mady-login-option >ul >li').hover(function() {
+        $('#mady-login-option >ul >li').removeClass('active');
         $(this).addClass('active');
     });
 
