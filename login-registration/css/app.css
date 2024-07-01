@@ -469,6 +469,9 @@ button:focus:not(:focus-visible) {
   box-shadow: none;
 }
 .mady-template-layout1 .mady-form-area .mady-btn-fill {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
   height: 60px;
   cursor: pointer;
   display: inline-block;
@@ -484,6 +487,18 @@ button:focus:not(:focus-visible) {
   width: 100%;
   transition: all 0.3s ease-in-out;
 }
+.mady-template-layout1 .mady-form-area .mady-btn-fill:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 800%;
+  height: 800%;
+  background-color: #ffffff;
+  z-index: -1;
+  transform: translate(-50%, -50%) rotate(45deg) scale(0);
+  transition: all 0.3s ease-in-out;
+}
 @media screen and (max-width: 991px) {
   .mady-template-layout1 .mady-form-area .mady-btn-fill {
     height: 55px;
@@ -495,8 +510,10 @@ button:focus:not(:focus-visible) {
   }
 }
 .mady-template-layout1 .mady-form-area .mady-btn-fill:hover {
-  background-color: transparent;
   color: var(--color-primary-1);
+}
+.mady-template-layout1 .mady-form-area .mady-btn-fill:hover:before {
+  transform: translate(-50%, -50%) rotate(45deg) scale(1);
 }
 .mady-template-layout1 .mady-form-area .mady-checkbox {
   margin-top: 25px;
@@ -886,6 +903,9 @@ button:focus:not(:focus-visible) {
   box-shadow: none;
 }
 .mady-template-layout2 .mady-form-area .mady-btn-fill {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
   height: 60px;
   cursor: pointer;
   display: inline-block;
@@ -894,16 +914,28 @@ button:focus:not(:focus-visible) {
   box-shadow: none;
   outline: none;
   border: 1px solid var(--color-primary-2);
-  color: #fff;
+  color: #ffffff;
   border-radius: 3px;
-  background-color: var(--color-primary-2);
   padding: 10px 36px;
   width: 100%;
   transition: all 0.3s ease-in-out;
 }
+.mady-template-layout2 .mady-form-area .mady-btn-fill:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-primary-2);
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
 .mady-template-layout2 .mady-form-area .mady-btn-fill:hover {
-  background-color: transparent;
   color: var(--color-primary-2);
+}
+.mady-template-layout2 .mady-form-area .mady-btn-fill:hover:before {
+  transform: translateY(100%);
 }
 .mady-template-layout2 .mady-forgot-text {
   margin-top: 27px;
