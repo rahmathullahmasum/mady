@@ -1,0 +1,83 @@
+/*-------------------------
+    Variables
+-------------------------*/
+:root {
+    --color-body: #74787C;
+    --color-title: #20282D;
+    
+    // Template Color
+    --color-primary-1: #F63939;
+    --color-primary-2: #396EF6;
+    --color-primary-3: #4CAF50;
+    --color-primary-4: #5F4ADE;
+    --color-primary-5: #B45A08;
+    
+    
+    // Social Color
+    --facebook: #337FFF;
+    --instagram: #d62976;
+    --twitter: #33CCFF;
+    --pinterest: #FF0000;
+    --linkedin: #0072b1;
+    --vimeo: #1AB7EA;
+    --tiktok: #000000;
+    --youtube: #FF0000;
+    --dribbble: #444444;
+    --mail-fast: #776CF2;   
+    --google: #EA4335;   
+
+    // Font Family
+    --font-primary: "Inter", sans-serif;
+
+    // Transition
+    --transition: all 0.3s ease-in-out;
+    --transition-menu: all 0.4s cubic-bezier(.30,.02,0,.60);
+    --transition-slider: 1s cubic-bezier(0.45, 0.05, 0.15, 0.93) 0.15s;
+    --transition-figure: all 0.5s cubic-bezier(0.23, 0.03, 0, 1.08);
+
+    // Body Font Size
+    --body-font-size: 16px;
+
+    // Heading Font Size
+    --h1-large: 64px;
+
+    @media (max-width: 991px) {
+        --h1-large: 56px;
+    }
+
+    @media (max-width: 767px) {
+        --h1-large: 40px;
+    }
+
+    @media (max-width: 575px) {
+        --h1-large: 36px;
+    }
+
+    --h1: 40px;
+
+    @media (max-width: 991px) {
+        --h1: 36px;
+    }
+
+    @media (max-width: 767px) {
+        --h1: 32px;
+    }
+
+    @media (max-width: 575px) {
+        --h1: 28px;
+    }
+
+    --h2: 30px;
+
+    @media (max-width: 991px) {
+        --h2: 28px;
+    }
+
+    @media (max-width: 767px) {
+        --h2: 26px;
+    }
+
+    @media (max-width: 575px) {
+        --h2: 24px;
+    }
+}
