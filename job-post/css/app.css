@@ -277,7 +277,7 @@ button:focus:not(:focus-visible) {
   padding: 70px calc(9vw + 70px) 70px 70px;
   position: relative;
   z-index: 1;
-  width: 60%;
+  width: 40%;
   display: flex;
   align-items: center;
 }
@@ -444,14 +444,6 @@ button:focus:not(:focus-visible) {
   color: #ffffff;
   font-size: 15px;
 }
-.mady-template-layout35 .mady-form-content {
-  width: 40%;
-}
-@media only screen and (max-width: 991px) {
-  .mady-template-layout35 .mady-form-content {
-    width: 100%;
-  }
-}
 .mady-template-layout35 .mady-form-content h2.mady-page-title {
   margin-bottom: 30px;
   font-size: 20px;
@@ -507,45 +499,11 @@ button:focus:not(:focus-visible) {
   display: none;
 }
 .mady-template-layout35 .mady-form-content .mady-inner-wrap {
-  margin-top: 30px;
-  margin-bottom: 30px;
   position: relative;
   z-index: 1;
-  margin-left: -9vw;
-  max-width: 770px;
   width: 100%;
   background-color: #ffffff;
   padding: 70px;
-  border-radius: 70px;
-  box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.09);
-}
-@media only screen and (max-width: 1199px) {
-  .mady-template-layout35 .mady-form-content .mady-inner-wrap {
-    margin-left: -3vw;
-    border-radius: 50px;
-    padding: 40px;
-  }
-}
-@media only screen and (max-width: 991px) {
-  .mady-template-layout35 .mady-form-content .mady-inner-wrap {
-    margin-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 30px;
-    border-radius: 40px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .mady-template-layout35 .mady-form-content .mady-inner-wrap {
-    padding: 20px;
-    border-radius: 30px;
-  }
-}
-@media only screen and (max-width: 575px) {
-  .mady-template-layout35 .mady-form-content .mady-inner-wrap {
-    padding: 15px;
-    border-radius: 20px;
-  }
 }
 .mady-template-layout35 .mady-form-content .form-group {
   margin-bottom: 10px;
@@ -561,7 +519,7 @@ button:focus:not(:focus-visible) {
 }
 .mady-template-layout35 .mady-form-content select,
 .mady-template-layout35 .mady-form-content input {
-  border-radius: 45px;
+  border-radius: 3px;
 }
 .mady-template-layout35 .mady-form-content select {
   -webkit-appearance: none;
@@ -735,7 +693,7 @@ button:focus:not(:focus-visible) {
   border: 1px solid;
   border-color: #1877f2;
   color: #fff;
-  border-radius: 45px;
+  border-radius: 3px;
   background-color: #1877f2;
   padding: 9px 40px;
   transition: all 0.3s ease-in-out;
@@ -746,20 +704,6 @@ button:focus:not(:focus-visible) {
 }
 .mady-template-layout35 .mady-form-content .mady-btn-fill:focus {
   outline: none;
-}
-.mady-template-layout35.mady-template-animation .mady-heading-content:before {
-  opacity: 0;
-  visibility: hidden;
-}
-.mady-template-layout35.loaded.mady-template-animation .mady-heading-content:before {
-  opacity: 1;
-  visibility: visible;
-  -webkit-transition: opacity 1.5s ease-in-out;
-  -o-transition: opacity 1.5s ease-in-out;
-  transition: opacity 1.5s ease-in-out;
-  -webkit-transition-delay: 0.3s;
-  -o-transition-delay: 0.3s;
-  transition-delay: 0.3s;
 }
 .mady-template-layout35 .success-page-wrap {
   height: 100vh;
