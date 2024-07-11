@@ -11,6 +11,7 @@
     $('.mady-total-step').html(steps);
 
     setProgressBar(current);
+    showSteps(steps, current);
 
     $(".next").on('click', function(e) {
         e.preventDefault();
@@ -36,6 +37,7 @@
         setProgressBar(++current);
 
         $('.mady-current-step').html(current);
+        showSteps(steps, current);
     });
 
     $(".previous").click(function() {
@@ -62,7 +64,19 @@
         });
         setProgressBar(--current);
         $('.mady-current-step').html(current);
+        showSteps(steps, current);
     });
+
+    function showSteps(totalSteps, currentStep){
+        $(".step-count")[0].innerHTML = '';
+
+        for(let i=1; i<=totalSteps; i++){
+            let el = document.createElement('span');
+            el.innerHTML = i;
+            if(currentStep>=i) el.classList.add('acitve');
+            $(".step-count")[0].appendChild(el);
+        }
+    }
 
     function setProgressBar(curStep) {
         var percent = parseFloat(100 / steps) * curStep;
