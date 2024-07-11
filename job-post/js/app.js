@@ -73,7 +73,7 @@
         for(let i=1; i<=totalSteps; i++){
             let el = document.createElement('span');
             el.innerHTML = i;
-            if(currentStep>=i) el.classList.add('acitve');
+            if(currentStep>=i) el.classList.add('active');
             $(".step-count")[0].appendChild(el);
         }
     }

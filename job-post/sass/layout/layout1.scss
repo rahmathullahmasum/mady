@@ -230,6 +230,7 @@
             color: #14133b;
         }
         .progress {
+            position: relative;
             height: 10px;
             margin-bottom: 20px;
         }
@@ -1029,6 +1030,28 @@
                     color: var(--pinterest);
                 }
             }
+        }
+    }
+}
+
+.step-count {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    span {
+        height: 50px;
+        width: 50px;
+        background-color: rgb(212, 212, 212);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &.active {
+            background-color: red;
         }
     }
 }
