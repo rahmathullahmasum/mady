@@ -13,48 +13,23 @@ STYLESHEET INDEXING
 |	|___ Variables
 |	|___ Typography
 |	|___ Global
-|	|___ Classes
-|	|___ Animation 
-|
-|___Elements Styles
-|	|___ Back To Top
-|	|___ Breadcrumb
-|	|___ Button 
-|	|___ Slick 
 |
 |___Template Styles
-|	|___ 404 Error
-|	|___ About
-|	|___ Author
-|	|___ Category
-|	|___ Contact
-|	|___ FAQ
-|	|___ Hero
-|	|___ Search
-|	|___ Newsletter
-|	|___ Post
-|	|___ Sidebar
-|	|___ Single Post
-|   |___ Team
-|
-|___Header Styles
-|	|___ Header
-|	|___ Mobile Menu
-|   |___ Topbar
-|
-|___Footer Styles
-|   |___Footer
-|   |___Instagram
-|   
+|	|___ Demo Layout One
+|	|___ Demo Layout Two
+|	|___ Demo Layout Three
+|	|___ Demo Layout Four
+|	|___ Demo Layout Five
+|  
 |___ END STYLESHEET INDEXING
 
 --------------------------------------------*/
 /*=======================================================================
 1. Default Styles
 =========================================================================*/
-/*-------------------------
-    Variables
--------------------------*/
+/*========================================================================
+Variables
+=========================================================================*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
 :root {
   --color-body: #74787C;
@@ -131,9 +106,9 @@ STYLESHEET INDEXING
   }
 }
 
-/*-------------------------
-    Typography
--------------------------*/
+/*========================================================================
+Typography
+=========================================================================*/
 body {
   font-family: var(--font-primary);
   font-size: var(--body-font-size);
@@ -220,9 +195,9 @@ h2,
   line-height: 1.25;
 }
 
-/*-------------------------
-    Global
--------------------------*/
+/*========================================================================
+Global
+=========================================================================*/
 a {
   text-decoration: none;
 }
@@ -255,7 +230,7 @@ button:focus:not(:focus-visible) {
 1. Default Styles
 =========================================================================*/
 /*========================================================================
-4. Demo Layout One
+Demo Layout One
 =========================================================================*/
 .mady-template-layout1 {
   height: 100%;
@@ -430,8 +405,6 @@ button:focus:not(:focus-visible) {
   z-index: 1;
   right: 15px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   display: block;
   background-color: transparent;
@@ -502,11 +475,13 @@ button:focus:not(:focus-visible) {
 @media screen and (max-width: 991px) {
   .mady-template-layout1 .mady-form-area .mady-btn-fill {
     height: 55px;
+    font-size: 17px;
   }
 }
 @media screen and (max-width: 767px) {
   .mady-template-layout1 .mady-form-area .mady-btn-fill {
     height: 50px;
+    font-size: 16px;
   }
 }
 .mady-template-layout1 .mady-form-area .mady-btn-fill:hover {
@@ -674,7 +649,7 @@ button:focus:not(:focus-visible) {
 }
 
 /*========================================================================
-4. Demo Layout One
+Demo Layout Two
 =========================================================================*/
 .mady-template-layout2 {
   height: 100%;
@@ -810,6 +785,16 @@ button:focus:not(:focus-visible) {
   background-color: #ffffff;
   box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);
 }
+@media screen and (max-width: 991px) {
+  .mady-template-layout2 .mady-form-area .mady-login-option {
+    height: 55px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mady-template-layout2 .mady-form-area .mady-login-option {
+    height: 50px;
+  }
+}
 .mady-template-layout2 .mady-form-area .mady-divider-area {
   display: flex;
   align-items: center;
@@ -837,8 +822,6 @@ button:focus:not(:focus-visible) {
   z-index: 1;
   left: 20px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   display: block;
   background-color: transparent;
@@ -850,8 +833,6 @@ button:focus:not(:focus-visible) {
   z-index: 1;
   right: 20px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   display: block;
   background-color: transparent;
@@ -902,6 +883,16 @@ button:focus:not(:focus-visible) {
   background-color: transparent;
   box-shadow: none;
 }
+@media screen and (max-width: 991px) {
+  .mady-template-layout2 .mady-form-area .form-control {
+    height: 55px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mady-template-layout2 .mady-form-area .form-control {
+    height: 50px;
+  }
+}
 .mady-template-layout2 .mady-form-area .mady-btn-fill {
   position: relative;
   z-index: 1;
@@ -930,6 +921,18 @@ button:focus:not(:focus-visible) {
   background-color: var(--color-primary-2);
   z-index: -1;
   transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width: 991px) {
+  .mady-template-layout2 .mady-form-area .mady-btn-fill {
+    height: 55px;
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mady-template-layout2 .mady-form-area .mady-btn-fill {
+    height: 50px;
+    font-size: 16px;
+  }
 }
 .mady-template-layout2 .mady-form-area .mady-btn-fill:hover {
   color: var(--color-primary-2);
@@ -994,7 +997,7 @@ button:focus:not(:focus-visible) {
 }
 
 /*========================================================================
-4. Demo Layout One
+Demo Layout Three
 =========================================================================*/
 .mady-template-layout3 {
   min-height: 100vh;
@@ -1073,10 +1076,7 @@ button:focus:not(:focus-visible) {
 }
 .mady-template-layout3 .mady-form-area .mady-login-option-wrap {
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   margin-right: -10px;
   margin-left: -10px;
@@ -1115,6 +1115,16 @@ button:focus:not(:focus-visible) {
 .mady-template-layout3 .mady-form-area .mady-login-option a .icon-holder {
   line-height: 1;
 }
+@media screen and (max-width: 991px) {
+  .mady-template-layout3 .mady-form-area .mady-login-option a {
+    height: 55px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mady-template-layout3 .mady-form-area .mady-login-option a {
+    height: 50px;
+  }
+}
 .mady-template-layout3 .mady-form-area .mady-login-option a:hover {
   border-color: #ffffff;
   background-color: #ffffff;
@@ -1146,8 +1156,6 @@ button:focus:not(:focus-visible) {
   z-index: 1;
   left: 20px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   display: block;
   background-color: transparent;
@@ -1159,8 +1167,6 @@ button:focus:not(:focus-visible) {
   z-index: 1;
   right: 20px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   display: block;
   background-color: transparent;
@@ -1213,6 +1219,16 @@ button:focus:not(:focus-visible) {
   border-color: #F1F4F7;
   box-shadow: none;
 }
+@media screen and (max-width: 991px) {
+  .mady-template-layout3 .mady-form-area .form-control {
+    height: 55px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mady-template-layout3 .mady-form-area .form-control {
+    height: 50px;
+  }
+}
 .mady-template-layout3 .mady-form-area .mady-btn-fill {
   height: 60px;
   cursor: pointer;
@@ -1233,6 +1249,18 @@ button:focus:not(:focus-visible) {
 .mady-template-layout3 .mady-form-area .mady-btn-fill:hover {
   background-color: transparent;
   color: var(--color-primary-3);
+}
+@media screen and (max-width: 991px) {
+  .mady-template-layout3 .mady-form-area .mady-btn-fill {
+    height: 55px;
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mady-template-layout3 .mady-form-area .mady-btn-fill {
+    height: 50px;
+    font-size: 16px;
+  }
 }
 .mady-template-layout3 .mady-forgot-text {
   margin-top: 25px;
@@ -1298,7 +1326,7 @@ button:focus:not(:focus-visible) {
 }
 
 /*========================================================================
-4. Demo Layout One
+Demo Layout Four
 =========================================================================*/
 .mady-template-layout4 {
   background-color: #F0F0F0;
@@ -1369,12 +1397,41 @@ button:focus:not(:focus-visible) {
   align-items: center;
   width: 100%;
 }
+@media only screen and (max-width: 767px) {
+  .mady-template-layout4 .mady-header {
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+    padding: 50px 30px 5px;
+  }
+}
 .mady-template-layout4 .mady-content {
-  padding: 30px;
+  padding: 24px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media only screen and (max-width: 991px) {
+  .mady-template-layout4 .mady-content {
+    padding: 70px 24px 24px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .mady-template-layout4 .mady-content {
+    padding: 60px 24px 24px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .mady-template-layout4 .mady-content {
+    padding: 50px 24px 24px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .mady-template-layout4 .mady-content {
+    padding: 40px 24px 24px;
+  }
 }
 .mady-template-layout4 .mady-form-area {
   position: relative;
@@ -1514,6 +1571,16 @@ button:focus:not(:focus-visible) {
 .mady-template-layout4 .mady-form-area .mady-login-option a .icon-holder {
   line-height: 1;
 }
+@media screen and (max-width: 991px) {
+  .mady-template-layout4 .mady-form-area .mady-login-option a {
+    height: 55px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mady-template-layout4 .mady-form-area .mady-login-option a {
+    height: 50px;
+  }
+}
 .mady-template-layout4 .mady-form-area .mady-login-option a:hover {
   border-color: #ffffff;
   background-color: #ffffff;
@@ -1545,8 +1612,6 @@ button:focus:not(:focus-visible) {
   z-index: 1;
   left: 20px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   display: block;
   background-color: transparent;
@@ -1558,8 +1623,6 @@ button:focus:not(:focus-visible) {
   z-index: 1;
   right: 20px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   display: block;
   background-color: transparent;
@@ -1618,6 +1681,16 @@ button:focus:not(:focus-visible) {
   opacity: 1;
   font-size: 14px;
 }
+@media screen and (max-width: 991px) {
+  .mady-template-layout4 .mady-form-area .form-control {
+    height: 55px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mady-template-layout4 .mady-form-area .form-control {
+    height: 50px;
+  }
+}
 .mady-template-layout4 .mady-form-area .mady-placeholder {
   position: absolute;
   top: 50%;
@@ -1648,6 +1721,18 @@ button:focus:not(:focus-visible) {
 .mady-template-layout4 .mady-form-area .mady-btn-fill:hover {
   background-color: transparent;
   color: var(--color-primary-4);
+}
+@media screen and (max-width: 991px) {
+  .mady-template-layout4 .mady-form-area .mady-btn-fill {
+    height: 55px;
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mady-template-layout4 .mady-form-area .mady-btn-fill {
+    height: 50px;
+    font-size: 16px;
+  }
 }
 .mady-template-layout4 .mady-form-area .form-check-input {
   border-color: transparent;
@@ -1752,7 +1837,7 @@ button:focus:not(:focus-visible) {
 }
 
 /*========================================================================
-4. Demo Layout One
+Demo Layout Five
 =========================================================================*/
 .mady-template-layout5 {
   min-height: 100vh;
@@ -1774,8 +1859,21 @@ button:focus:not(:focus-visible) {
   width: 100%;
   object-fit: cover;
 }
+.mady-template-layout5 .mady-bg-img .mady-shape-holder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: all 3 ease-in-out;
+}
+.mady-template-layout5 .mady-bg-img.mady-template-animation .mady-shape-holder {
+  transform: translate(-100%, -100%);
+}
+.mady-template-layout5 .mady-bg-img.mady-template-animation.loaded .mady-shape-holder {
+  transform: translate(0, 0);
+}
 .mady-template-layout5 .mady-content {
-  padding: 50px 30px;
+  padding: 50px 24px;
   width: 696px;
   display: flex;
   flex-direction: column;
@@ -1896,8 +1994,6 @@ button:focus:not(:focus-visible) {
   z-index: 1;
   left: 20px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   display: block;
   background-color: transparent;
@@ -1909,8 +2005,6 @@ button:focus:not(:focus-visible) {
   z-index: 1;
   right: 20px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   display: block;
   background-color: transparent;
@@ -1963,6 +2057,16 @@ button:focus:not(:focus-visible) {
   background-color: #F1F4F7;
   border-color: #F1F4F7;
 }
+@media screen and (max-width: 991px) {
+  .mady-template-layout5 .mady-form-area .form-control {
+    height: 55px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mady-template-layout5 .mady-form-area .form-control {
+    height: 50px;
+  }
+}
 .mady-template-layout5 .mady-form-area .mady-btn-fill {
   height: 60px;
   cursor: pointer;
@@ -1982,6 +2086,18 @@ button:focus:not(:focus-visible) {
 }
 .mady-template-layout5 .mady-form-area .mady-btn-fill:hover {
   background-color: transparent;
+}
+@media screen and (max-width: 991px) {
+  .mady-template-layout5 .mady-form-area .mady-btn-fill {
+    height: 55px;
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mady-template-layout5 .mady-form-area .mady-btn-fill {
+    height: 50px;
+    font-size: 16px;
+  }
 }
 .mady-template-layout5 .mady-form-area .form-check-input {
   border-color: #555555;

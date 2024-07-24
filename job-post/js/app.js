@@ -70,7 +70,7 @@
     function showSteps(totalSteps, currentStep){
         $(".step-count")[0].innerHTML = '';
 
-        for(let i=1; i<=totalSteps; i++){
+        for(let i=0; i<=totalSteps; i++){
             let el = document.createElement('span');
             el.innerHTML = i;
             if(currentStep>=i) el.classList.add('active');

@@ -13,39 +13,14 @@ STYLESHEET INDEXING
 |	|___ Variables
 |	|___ Typography
 |	|___ Global
-|	|___ Classes
-|	|___ Animation 
-|
-|___Elements Styles
-|	|___ Back To Top
-|	|___ Breadcrumb
-|	|___ Button 
-|	|___ Slick 
 |
 |___Template Styles
-|	|___ 404 Error
-|	|___ About
-|	|___ Author
-|	|___ Category
-|	|___ Contact
-|	|___ FAQ
-|	|___ Hero
-|	|___ Search
-|	|___ Newsletter
-|	|___ Post
-|	|___ Sidebar
-|	|___ Single Post
-|   |___ Team
-|
-|___Header Styles
-|	|___ Header
-|	|___ Mobile Menu
-|   |___ Topbar
-|
-|___Footer Styles
-|   |___Footer
-|   |___Instagram
-|   
+|	|___ Demo Layout One
+|	|___ Demo Layout Two
+|	|___ Demo Layout Three
+|	|___ Demo Layout Four
+|	|___ Demo Layout Five
+|  
 |___ END STYLESHEET INDEXING
 
 --------------------------------------------*/
@@ -56,9 +31,12 @@ STYLESHEET INDEXING
 @import "default/variable";
 @import "default/typography";
 @import "default/global";
-@import "default/classes";
 
 /*=======================================================================
 1. Default Styles
 =========================================================================*/
 @import "layout/layout1";
+@import "layout/layout2";
+@import "layout/layout3";
+@import "layout/layout4";
+@import "layout/layout5";
