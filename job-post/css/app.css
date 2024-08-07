@@ -60,7 +60,7 @@ STYLESHEET INDEXING
   --color-body: #74787C;
   --color-title: #20282D;
   --color-primary-1: #F63939;
-  --color-primary-2: #396EF6;
+  --color-primary-2: #6A39F6;
   --color-primary-3: #4CAF50;
   --color-primary-4: #5F4ADE;
   --color-primary-5: #B45A08;
@@ -647,7 +647,7 @@ h2.mady-page-title span {
   position: absolute;
   width: 16px;
   height: 16px;
-  top: 19px;
+  top: 20px;
   left: 16px;
   border: 1px solid;
   border-color: #dddddd;
@@ -663,7 +663,7 @@ h2.mady-page-title span {
   font-size: 9px;
   color: #ffffff;
   left: 20px;
-  top: 21px;
+  top: 22px;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease-in-out;
@@ -711,16 +711,16 @@ h2.mady-page-title span {
   box-shadow: none;
   outline: none;
   border: 1px solid;
-  border-color: #F63939;
+  border-color: var(--color-primary-1);
   color: #fff;
   border-radius: 3px;
-  background-color: #F63939;
+  background-color: var(--color-primary-1);
   padding: 9px 40px;
   transition: all 0.3s ease-in-out;
 }
 .mady-btn-fill:hover {
   background-color: transparent;
-  color: #F63939;
+  color: var(--color-primary-1);
 }
 .mady-btn-fill:focus {
   outline: none;
@@ -803,6 +803,108 @@ input[type=file]::file-selector-button {
   color: #A1A1A1;
   font-size: 15px;
   font-weight: 600;
+}
+
+.mady-template-layout2 {
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.mady-template-layout2 .mady-header {
+  height: 100vh;
+  width: 30%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 30px;
+}
+.mady-template-layout2 .mady-progress-wrap {
+  padding: 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10vh;
+  background-color: #F7F4FF;
+}
+.mady-template-layout2 .mady-progress-wrap .mady-progress-inner-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.mady-template-layout2 .mady-progress-wrap .progress {
+  height: 100%;
+  width: 3px;
+  background-color: #C1C1C1;
+}
+.mady-template-layout2 .mady-progress-wrap .progress-bar {
+  width: 3px;
+  background-color: var(--color-primary-2);
+  transition: all 0.3s ease-in-out;
+}
+.mady-template-layout2 .mady-progress-wrap .step-count {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: -14px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.mady-template-layout2 .mady-socials {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.mady-template-layout2 .mady-socials ul {
+  justify-content: flex-start;
+}
+.mady-template-layout2 .mady-form-wrap {
+  padding: 120px 100px 120px 100px;
+  width: 70%;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+.mady-template-layout2 .mady-btn-fill {
+  border-color: var(--color-primary-2);
+  background-color: var(--color-primary-2);
+}
+.mady-template-layout2 .mady-btn-fill:hover {
+  background-color: transparent;
+  color: var(--color-primary-2);
+}
+.mady-template-layout2 .step-count span {
+  background-color: #E0D9F9;
+  color: #6A39F6;
+}
+.mady-template-layout2 .step-count span.active {
+  color: #ffffff;
+  background-color: var(--color-primary-2);
+}
+.mady-template-layout2 .form-group {
+  margin-bottom: 10px;
+}
+.mady-template-layout2 .form-group .icon-holder {
+  position: absolute;
+  z-index: 1;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  background-color: transparent;
+  border: 0;
+  color: #74787C;
+}
+.mady-template-layout2 .form-group .mady-input-label {
+  margin-bottom: 15px;
+  font-size: 15px;
+  color: #20282D;
+  font-weight: 600;
+}
+.mady-template-layout2 .form-group .form-control {
+  padding: 10px 30px;
 }
 
 /*# sourceMappingURL=app.css.map */

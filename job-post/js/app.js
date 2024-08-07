@@ -70,7 +70,7 @@
     function showSteps(totalSteps, currentStep){
         $(".step-count")[0].innerHTML = '';
 
-        for(let i=0; i<=totalSteps; i++){
+        for(let i=1; i<=totalSteps; i++){
             let el = document.createElement('span');
             el.innerHTML = i;
             if(currentStep>=i) el.classList.add('active');
@@ -79,10 +79,10 @@
     }
 
     function setProgressBar(curStep) {
-        var percent = parseFloat(100 / steps) * curStep;
+        var percent = parseFloat((100 / (steps - 1))) * curStep;
         percent = percent.toFixed();
-        $(".progress-bar")
-            .css("width", percent + "%")
+        $(".progress-horizontal-bar").css("width", percent + "%")
+        $(".progress-vertical-bar").css("height", percent + "%")
     }
 
     /*-------------------------------------

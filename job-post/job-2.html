@@ -26,48 +26,59 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <section class="mady-template-layout2"> 
+        <div class="mady-header">
+        <div class="mady-progress-wrap">
+            <div class="mady-logo-holder">
+                <a href="login-1.html" class="mady-logo"><img src="img/logo-2.svg" alt="Logo"></a>
+            </div>
+            <div class="mady-progress-inner-wrap">
+                <div class="progress">
+                    <div class="progress-vertical-bar progress-bar progress-bar-solid progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                </div>
+                <div class="step-count"></div>
+            </div>
+            <div class="mady-socials">
+                <ul>
+                    <li class="mady-facebook">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="mady-twitter">
+                        <a href="#" title="twitter"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="mady-google">
+                        <a href="#" title="google"><i class="fab fa-google-plus-g"></i></a>
+                    </li>
+                    <li class="mady-linkedin">
+                        <a href="#" title="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                    <li class="mady-pinterest">
+                        <a href="#" title="pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
         <div class="mady-form-wrap">
             <div class="mady-main-form">
                 <div>
-                    <!-- Progressbar -->
-                    <div class="mb-5 d-grid">
-                        <div class="position-relative">
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-solid progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-                                </div>
-                            </div>
-                        <div class="step-count"></div>
-                        </div>
-                    </div>
-                    <!-- Form -->
+                   
                     <form action="job-1-success.html" method="GET">
                         <div class="mady-form-step">
                             <h2 class="mady-page-title">Personal Information</h2>
                             <div class="form-group">
-                                <label for="email" class="mady-input-label">Name</label>
                                 <div class="position-relative">
                                     <input id="name" type="text" class="form-control" name="name" placeholder="Name">
-                                    <div class="icon-holder">
-                                        <i class="fa-light fa-user"></i>
-                                    </div>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="email" class="mady-input-label">Email</label>
                                 <div class="position-relative">
                                     <input id="email" type="email" class="form-control" name="email" placeholder="Email">
-                                    <div class="icon-holder">
-                                        <i class="fa-light fa-user"></i>
-                                    </div>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="email" class="mady-input-label">Phone No</label>
                                 <div class="position-relative">
                                     <input id="phone" type="text" class="form-control" name="phone" placeholder="Phone">
-                                    <div class="icon-holder">
-                                        <i class="fa-light fa-user"></i>
-                                    </div>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -97,99 +108,127 @@
                         </div>                               
                         <div class="mady-form-step">
                             <h2 class="mady-page-title">Select Job Position</h2>
-                            <div class="form-group">
-                                <div class="radio-box hide-radio-box">
-                                    <input id="radio-position1" class="form-check-input" name="radio-position" type="radio">
-                                    <label class="form-check-label" for="radio-position1">Graphic Designer</label>
-                                    <div class="icon-holder">
-                                        <i class="fa-solid fa-pen-nib"></i>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <div class="radio-box hide-radio-box">
+                                            <input id="radio-position1" class="form-check-input" name="radio-position" type="radio">
+                                            <label class="form-check-label" for="radio-position1">Graphic Designer</label>
+                                            <div class="icon-holder">
+                                                <i class="fa-solid fa-pen-nib"></i>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="radio-box hide-radio-box">
-                                    <input id="radio-position2" class="form-check-input" name="radio-position" type="radio">
-                                    <label class="form-check-label" for="radio-position2">UI/UX Designer</label>
-                                    <div class="icon-holder">
-                                        <i class="fa-solid fa-crop-simple"></i>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <div class="radio-box hide-radio-box">
+                                            <input id="radio-position2" class="form-check-input" name="radio-position" type="radio">
+                                            <label class="form-check-label" for="radio-position2">UI/UX Designer</label>
+                                            <div class="icon-holder">
+                                                <i class="fa-solid fa-crop-simple"></i>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="radio-box hide-radio-box">
-                                    <input id="radio-position3" class="form-check-input" name="radio-position" type="radio">
-                                    <label class="form-check-label" for="radio-position3">Frontend Developer</label>
-                                    <div class="icon-holder">
-                                        <i class="fa-brands fa-html5"></i>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <div class="radio-box hide-radio-box">
+                                            <input id="radio-position3" class="form-check-input" name="radio-position" type="radio">
+                                            <label class="form-check-label" for="radio-position3">Frontend Developer</label>
+                                            <div class="icon-holder">
+                                                <i class="fa-brands fa-html5"></i>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="radio-box hide-radio-box">
-                                    <input id="radio-position4" class="form-check-input" name="radio-position" type="radio">
-                                    <label class="form-check-label" for="radio-position4">WordPress Developer</label>
-                                    <div class="icon-holder">
-                                        <i class="fa-brands fa-wordpress"></i>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <div class="radio-box hide-radio-box">
+                                            <input id="radio-position4" class="form-check-input" name="radio-position" type="radio">
+                                            <label class="form-check-label" for="radio-position4">WordPress Developer</label>
+                                            <div class="icon-holder">
+                                                <i class="fa-brands fa-wordpress"></i>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="radio-box hide-radio-box">
-                                    <input id="radio-position5" class="form-check-input" name="radio-position" type="radio">
-                                    <label class="form-check-label" for="radio-position5">Support Engineer</label>
-                                    <div class="icon-holder">
-                                        <i class="fa-solid fa-headset"></i>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <div class="radio-box hide-radio-box">
+                                            <input id="radio-position5" class="form-check-input" name="radio-position" type="radio">
+                                            <label class="form-check-label" for="radio-position5">Support Engineer</label>
+                                            <div class="icon-holder">
+                                                <i class="fa-solid fa-headset"></i>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="d-flex align-items-center gap-4 mt-5">
-                                    <input type="button" name="previous" class="previous mady-btn-fill" value="Previous Step">
-                                    <input type="button" name="next" class="next mady-btn-fill" value="Next Step">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <div class="d-flex align-items-center gap-4 mt-5">
+                                            <input type="button" name="previous" class="previous mady-btn-fill" value="Previous Step">
+                                            <input type="button" name="next" class="next mady-btn-fill" value="Next Step">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="mady-form-step">
                             <h2 class="mady-page-title">Work Experiance</h2>                            
-                            <div class="form-group">
-                                <div class="radio-box">
-                                    <input id="radio-position6" class="form-check-input" name="radio-position" type="radio">
-                                    <label class="form-check-label" for="radio-position6">Graphic Designer</label>
-                                   
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <div class="radio-box">
+                                            <input id="radio-position6" class="form-check-input" name="radio-position" type="radio">
+                                            <label class="form-check-label" for="radio-position6">Graphic Designer</label>
+                                        
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="radio-box">
-                                    <input id="radio-position7" class="form-check-input" name="radio-position" type="radio">
-                                    <label class="form-check-label" for="radio-position7">UI/UX Designer</label>
-                                 
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <div class="radio-box">
+                                            <input id="radio-position7" class="form-check-input" name="radio-position" type="radio">
+                                            <label class="form-check-label" for="radio-position7">UI/UX Designer</label>
+                                        
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="radio-box">
-                                    <input id="radio-position8" class="form-check-input" name="radio-position" type="radio">
-                                    <label class="form-check-label" for="radio-position8">Frontend Developer</label>
-                                   
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <div class="radio-box">
+                                            <input id="radio-position8" class="form-check-input" name="radio-position" type="radio">
+                                            <label class="form-check-label" for="radio-position8">Frontend Developer</label>
+                                        
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="radio-box">
-                                    <input id="radio-position9" class="form-check-input" name="radio-position" type="radio">
-                                    <label class="form-check-label" for="radio-position9">WordPress Developer</label>
-                                 
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <div class="radio-box">
+                                            <input id="radio-position9" class="form-check-input" name="radio-position" type="radio">
+                                            <label class="form-check-label" for="radio-position9">WordPress Developer</label>
+                                        
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="radio-box">
-                                    <input id="radio-position10" class="form-check-input" name="radio-position" type="radio">
-                                    <label class="form-check-label" for="radio-position10">Support Engineer</label>
-                                  
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <div class="radio-box">
+                                            <input id="radio-position10" class="form-check-input" name="radio-position" type="radio">
+                                            <label class="form-check-label" for="radio-position10">Support Engineer</label>
+                                        
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="d-flex align-items-center gap-4 mt-5">
-                                    <input type="button" name="previous" class="previous mady-btn-fill" value="Previous Step">
-                                    <input type="button" name="next" class="next mady-btn-fill" value="Next Step">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <div class="d-flex align-items-center gap-4 mt-5">
+                                            <input type="button" name="previous" class="previous mady-btn-fill" value="Previous Step">
+                                            <input type="button" name="next" class="next mady-btn-fill" value="Next Step">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
