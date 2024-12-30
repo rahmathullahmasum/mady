@@ -1,0 +1,42 @@
+/*---------------------------------------------
+Template Name: Blogxpress
+Template URL: https://new.axilthemes.com/demo/template/blogxpress/
+Description: Blog and News HTML Template
+Author: Axilthemes
+Author URL: https://axilthemes.com/
+Version: 1.0.1
+
+===============================================   
+STYLESHEET INDEXING
+|
+|___Default Styles
+|	|___ Variables
+|	|___ Typography
+|	|___ Global
+|
+|___Template Styles
+|	|___ Demo Layout One
+|	|___ Demo Layout Two
+|	|___ Demo Layout Three
+|	|___ Demo Layout Four
+|	|___ Demo Layout Five
+|  
+|___ END STYLESHEET INDEXING
+
+--------------------------------------------*/
+
+/*=======================================================================
+1. Default Styles
+=========================================================================*/
+@import "default/variable";
+@import "default/typography";
+@import "default/global";
+
+/*=======================================================================
+1. Default Styles
+=========================================================================*/
+@import "layout/layout1";
+@import "layout/layout2";
+@import "layout/layout3";
+@import "layout/layout4";
+@import "layout/layout5";

@@ -1,0 +1,181 @@
+/*========================================================================
+Demo Layout One
+=========================================================================*/
+.mady-template-layout1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: $white;
+
+    .mady-header {
+        padding: 30px;
+        .mady-logo {
+            display: inline-block;
+            img {
+                height: 40px;
+            }
+        }
+    }
+
+    .mady-main-body {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        padding: 0 60px;
+        gap: 60px;
+
+        .mady-content-area {
+            flex: 1;
+            max-width: 600px;
+
+            .mady-title {
+                font-size: 48px;
+                font-weight: 600;
+                color: $text-color;
+                margin-bottom: 20px;
+                line-height: 1.2;
+            }
+
+            .mady-description {
+                font-size: 18px;
+                color: rgba($text-color, 0.8);
+                margin-bottom: 40px;
+                line-height: 1.5;
+            }
+
+            .mady-form {
+                .form-group {
+                    margin-bottom: 15px;
+
+                    .position-relative {
+                        position: relative;
+                    }
+
+                    .form-control {
+                        width: 100%;
+                        padding: 15px 20px;
+                        border: 1px solid rgba($text-color, 0.1);
+                        border-radius: 8px;
+                        font-size: 16px;
+                        
+                        &::placeholder {
+                            color: rgba($text-color, 0.5);
+                        }
+
+                        &:focus {
+                            outline: none;
+                            border-color: $primary-color;
+                        }
+                    }
+
+                    .mady-btn-fill {
+                        width: 100%;
+                        padding: 15px 30px;
+                        background: $button-color;
+                        color: $white;
+                        border: none;
+                        border-radius: 8px;
+                        font-size: 16px;
+                        font-weight: 600;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+
+                        &:hover {
+                            background: darken($button-color, 5%);
+                            transform: translateY(-2px);
+                        }
+                    }
+                }
+            }
+        }
+
+        .mady-illustration {
+            flex: 1;
+            background: $primary-color;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            
+            img {
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .mady-footer {
+        padding: 30px;
+        text-align: center;
+
+        .mady-socials {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+
+            li {
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background: rgba($text-color, 0.1);
+                    color: $text-color;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        background: $primary-color;
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+        .mady-page-switcher {
+            color: rgba($text-color, 0.6);
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .mady-template-layout1 {
+        .mady-header {
+            padding: 20px;
+        }
+
+        .mady-main-body {
+            padding: 20px;
+            flex-direction: column;
+            gap: 40px;
+
+            .mady-content-area {
+                text-align: center;
+
+                .mady-title {
+                    font-size: 36px;
+                }
+
+                .mady-description br {
+                    display: none;
+                }
+            }
+
+            .mady-illustration {
+                display: none;
+            }
+        }
+
+        .mady-footer {
+            padding: 20px;
+        }
+    }
+}
