@@ -2,9 +2,11 @@
 Demo Layout One
 =========================================================================*/
 .mady-template-layout3 {
-	padding: 60px 30vw 60px 210px;
+	padding: 60px 30px;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	gap: 50px;
 	height: 100vh;
 	position: relative;
@@ -20,35 +22,52 @@ Demo Layout One
 	@media screen and (max-width: 575px) {
 		padding: 40px 20vw 40px 12px;
 	}
-	.mady-bg-img {
-		width: 28vw;
-		height: 100%;
+	.mady-shape-wrap {
 		position: absolute;
-		right: 0;
 		top: 0;
-		@media screen and (max-width: 767px) {
-			width: 23vw;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		z-index: -1;
+		overflow: hidden;
+		@media only screen and (max-width: 991px) {
+			display: none;
 		}
-		@media screen and (max-width: 575px) {
-			width: 18vw;
+		.mady-shape-holder {
+			position: absolute;
+			transition: all 1s ease-in-out;
 		}
-		img {
-			height: 100%;
-			width: 100%;
-			object-fit: cover;
-			transition: all 2s ease-in-out;
+		.mady-shape-1 {
+			bottom: 0;
+			left: 0;
+		}
+		.mady-shape-2 {
+			bottom: 0;
+			right: 0;
+		}
+		&.mady-template-animation {
+			.mady-shape-1 {
+				transform: translate(-100%, 0);
+				transition-delay: 0;
+			}
+			.mady-shape-2 {
+				transform: translate(100%, 0);
+				transition-delay: 0.2s;
+			}
 		}
 		&.mady-template-animation.loaded {
-            >img {
-              border-radius: 100px 0 0 100px;
-            }
-        }
+			.mady-shape-1,
+			.mady-shape-2 {
+				transform: translate(0, 0);
+			}
+		}
 	}
 	.mady-header {
 		text-align: center;
 	}
 	.mady-main-body {
-		max-width: 720px;
+		text-align: center;
+		max-width: 900px;
 		width: 100%;
 		height: 100%;
 		display: flex;
@@ -80,6 +99,10 @@ Demo Layout One
 			}
 		}
 		.mady-description {
+			max-width: 550px;
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
 			font-size: 22px;
 			font-weight: 600;
 			color: #20282D;
@@ -97,7 +120,10 @@ Demo Layout One
 			}
 		}
 		.mady-form-area {	
-			width: 100%;		
+			max-width: 710px;	
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;			
 			.form-group {
 				display: inline-flex;
 				align-items: center;
@@ -159,10 +185,10 @@ Demo Layout One
 				font-weight: 600;
 				box-shadow: none;
 				outline: none;
-				border: 1px solid var(--color-primary-1);
+				border: 1px solid var(--color-primary-3);
 				color: #fff;
 				border-radius: 5px;
-				background-color: var(--color-primary-1);
+				background-color: var(--color-primary-3);
 				padding: 10px 36px;
 				transition: all 0.3s ease-in-out;
 				&:before {
@@ -188,7 +214,7 @@ Demo Layout One
 					margin-top: 10px;
 				}
 				&:hover {
-					color: var(--color-primary-1);
+					color: var(--color-primary-3);
 					&:before {
 						transform: translate(-50%, -50%) rotate(45deg) scale(1);
 					}
