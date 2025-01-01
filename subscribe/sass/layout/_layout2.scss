@@ -1,64 +1,60 @@
 /*========================================================================
 Demo Layout One
 =========================================================================*/
-.mady-template-layout1 {
-	padding: 60px 30vw 60px 210px;
+.mady-template-layout2 {
+	padding: 80px 30px;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	gap: 50px;
 	height: 100vh;
 	position: relative;
+	z-index: 1;
 	@media screen and (max-width: 1399px) {
-		padding: 60px 30vw 60px 100px;
+		padding: 60px 30px;
 	}
 	@media screen and (max-width: 1199px) {
-		padding: 50px 30vw 50px 60px;
+		padding: 50px 30px;
 	}
 	@media screen and (max-width: 767px) {
-		padding: 45px 25vw 45px 30px;
+		padding: 45px 30px;
 	}
 	@media screen and (max-width: 575px) {
-		padding: 40px 20vw 40px 12px;
+		padding: 40px 12px;
 	}
 	.mady-bg-img {
-		width: 28vw;
+		width: 100%;
 		height: 100%;
 		position: absolute;
+		z-index: -1;
 		right: 0;
 		top: 0;
-		@media screen and (max-width: 767px) {
-			width: 23vw;
-		}
-		@media screen and (max-width: 575px) {
-			width: 18vw;
-		}
 		img {
 			height: 100%;
 			width: 100%;
 			object-fit: cover;
 			transition: all 2s ease-in-out;
 		}
-		&.mady-template-animation.loaded {
-            >img {
-              border-radius: 100px 0 0 100px;
-            }
-        }
 	}
 	.mady-header {
 		text-align: center;
 	}
 	.mady-main-body {
-		max-width: 720px;
+		text-align: center;
+		max-width: 900px;
 		width: 100%;
 		height: 100%;
 		display: flex;
 		align-items: center;
+		justify-content: center;
 		.mady-content {
 			width: 100%;
 		}
 		.mady-title {
+			color: #ffffff;
 			font-size: 80px;
-			font-weight: 500;
+			font-weight: 400;
 			margin-bottom: 20px;
 			line-height: 1.25;
 			@media screen and (max-width: 1399px) {
@@ -80,10 +76,14 @@ Demo Layout One
 			}
 		}
 		.mady-description {
+			max-width: 550px;
+			width: 100%;
 			font-size: 22px;
 			font-weight: 600;
-			color: #20282D;
+			color: #ffffff;
 			margin-bottom: 50px;
+			margin-left: auto;
+			margin-right: auto;
 			@media screen and (max-width: 991px) {
 				font-size: 20px;
 			}
@@ -97,25 +97,32 @@ Demo Layout One
 			}
 		}
 		.mady-form-area {	
-			width: 100%;		
+			max-width: 710px;	
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;	
 			.form-group {
+				border-radius: 45px;
 				display: inline-flex;
 				align-items: center;
-				border: 1px solid #BEBEBE;
+				border: 1px solid #C7C7C7;
 				padding: 5px;
 				width: 100%;
 				input::-ms-input-placeholder {
-					color: #20282D;
+					color: #C7C7C7;
 				}			  
 				input::placeholder {
-					color: #20282D;
+					color: #C7C7C7;
 				}
-				.mady-email-input {
+				.mady-email-input {					
+					border-radius: 45px;
+					color: #ffffff;
 					margin-bottom: 0;
 					border: 0;
 					flex: 1;
+					background-color: transparent;
 					@media screen and (max-width: 767px) {
-						border: 1px solid #BEBEBE;
+						border: 1px solid #C7C7C7;
 					}
 				}
 				@media screen and (max-width: 767px) {
@@ -159,10 +166,10 @@ Demo Layout One
 				font-weight: 600;
 				box-shadow: none;
 				outline: none;
-				border: 1px solid var(--color-primary-1);
+				border: 1px solid var(--color-primary-2);
 				color: #fff;
-				border-radius: 5px;
-				background-color: var(--color-primary-1);
+				border-radius: 45px;
+				background-color: var(--color-primary-2);
 				padding: 10px 36px;
 				transition: all 0.3s ease-in-out;
 				&:before {
@@ -188,7 +195,7 @@ Demo Layout One
 					margin-top: 10px;
 				}
 				&:hover {
-					color: var(--color-primary-1);
+					color: var(--color-primary-2);
 					&:before {
 						transform: translate(-50%, -50%) rotate(45deg) scale(1);
 					}

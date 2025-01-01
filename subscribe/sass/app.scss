@@ -28,12 +28,15 @@ STYLESHEET INDEXING
 /*=======================================================================
 1. Default Styles
 =========================================================================*/
-@use 'default/variable' as *;
-@use 'default/typography' as *;
-@use 'default/global' as *;
+@import "default/variable";
+@import "default/typography";
+@import "default/global";
 
 /*=======================================================================
 1. Default Styles
 =========================================================================*/
-@use 'layout/layout1' as *;
-
+@import "layout/layout1";
+@import "layout/layout2";
+@import "layout/layout3";
+@import "layout/layout4";
+@import "layout/layout5";
