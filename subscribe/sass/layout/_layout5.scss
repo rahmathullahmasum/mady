@@ -1,284 +1,199 @@
 /*========================================================================
-Demo Layout Three
+Demo Layout One
 =========================================================================*/
 .mady-template-layout5 {
-	padding: 40px 210px 20px;
-	min-height: 100vh;
-    position: relative;
+	padding: 80px 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+	height: 100vh;
+	position: relative;
 	z-index: 1;
-	.mady-bg {
+	@media screen and (max-width: 1399px) {
+		padding: 60px 30px;
+	}
+	@media screen and (max-width: 1199px) {
+		padding: 50px 30px;
+	}
+	@media screen and (max-width: 767px) {
+		padding: 45px 30px;
+	}
+	@media screen and (max-width: 575px) {
+		padding: 40px 12px;
+	}
+	.mady-bg-img {
+		width: 100%;
+		height: 100%;
 		position: absolute;
 		z-index: -1;
-		bottom: 0;
-		left: 15%;
-	}
-	.mady-logo-holder {
-		text-align: center;
-		border-bottom: 1px solid;
-		border-color: #D9D9D9;
-		padding-bottom: 30px;
-		margin-bottom: 70px;
-	}
-	.mady-main-body {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+		right: 0;
+		top: 0;
+		img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+			transition: all 2s ease-in-out;
+		}
 	}
 	.mady-header {
+		text-align: center;
+	}
+	.mady-main-body {
+		text-align: center;
+		max-width: 1140px;
+		width: 100%;
+		height: 100%;
 		display: flex;
-		justify-content: space-between;
-		margin-bottom: 50px;
-	}
-	.mady-main-title {
-		max-width: 480px;
-		font-weight: 600;
-		font-size: 60px;
-		width: 100%;
-	}
-	.mady-description {
-		max-width: 330px;
-		width: 100%;
-	}
-    .mady-form-area {
-		margin-bottom: 50px;
-		width: 50%;
-		border-radius: 10px;
-		.mady-input-label {
-			font-size: 15px;
+		align-items: center;
+		justify-content: center;
+		background-color: #ffffff;
+		.mady-content {
+			width: 900px;
+		}
+		.mady-title {
 			color: var(--color-title);
-			font-weight: 600;
-			margin-bottom: 10px;
-		}
-		.form-group {
-			.icon-holder {
-				position: absolute;
-				z-index: 1;
-				right: 15px;
-				top: 50%;
-				transform: translateY(-50%);
-				display: block;
-				background-color: transparent;
-				border: 0;
-				color: #9D9FAC;
-			}
-			textarea::-ms-textarea-placeholder,
-			input::-ms-input-placeholder {
-				color: #909090;
-				font-size: 15px;
-			}			  
-			textarea::placeholder,
-			input::placeholder {
-				color: #909090;
-				font-size: 15px;
-			}
-		}
-		.form-control {
-			padding: 10px 30px;
-			border: 1px solid;
-			border-color: #BEBEBE;
-			background-color: transparent;
+			font-size: 80px;
+			font-weight: 400;
 			margin-bottom: 20px;
-			font-size: 16px;
+			line-height: 1.25;
+			@media screen and (max-width: 1399px) {
+				font-size: 70px;
+			}
+			@media screen and (max-width: 1199px) {
+				font-size: 60px;
+			}
+			@media screen and (max-width: 991px) {
+				font-size: 50px;
+			}
+			@media screen and (max-width: 767px) {
+				font-size: 40px;
+				margin-bottom: 15px;
+			}
+			@media screen and (max-width: 575px) {
+				font-size: 30px;
+				margin-bottom: 10px;
+			}
+		}
+		.mady-description {
+			max-width: 550px;
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			font-size: 22px;
+			font-weight: 600;
 			color: var(--color-title);
-			transition: all 0.3s ease-in-out;
-			
-			&:focus {
-				border-color: #20282D;
-				box-shadow: none;
-			}
-		}
-		input {
-			border-radius: 45px;
-			height: 50px;
+			margin-bottom: 50px;
 			@media screen and (max-width: 991px) {
-				height: 45px;
+				font-size: 20px;
 			}
 			@media screen and (max-width: 767px) {
-				height: 40px;
+				font-size: 18px;
+				margin-bottom: 40px;
 			}
-		}
-		textarea {
-			border-radius: 30px;
-		}
-		.mady-btn-fill {
-			position: relative;
-			z-index: 1;
-			overflow: hidden;
-			height: 60px;
-			cursor: pointer;
-			display: inline-block;
-			font-size: 20px;
-			font-weight: 700;
-			box-shadow: none;
-			outline: none;
-			border: 1px solid var(--color-primary-5);
-			color: #20282D;
-			border-radius: 45px;
-			background-color: var(--color-primary-5);
-			padding: 10px 36px;
-			transition: all 0.3s ease-in-out;
-			&:before {
-				content: '';
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				width: 800%;
-				height: 800%;
-				background-color: #ffffff;
-				z-index: -1;
-				transform: translate(-50%, -50%) rotate(45deg) scale(0);
-				transition: all 0.3s ease-in-out;
-			}
-			@media screen and (max-width: 991px) {
-				height: 55px;
-				font-size: 17px;
-			}
-			@media screen and (max-width: 767px) {
-				height: 50px;
+			@media screen and (max-width: 575px) {
 				font-size: 16px;
+				margin-bottom: 30px;
 			}
-			&:hover {
-				color: var(--color-primary-5);
-				&:before {
-					transform: translate(-50%, -50%) rotate(45deg) scale(1);
+		}
+		.mady-form-area {	
+			max-width: 710px;	
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;	
+			.form-group {
+				border-radius: 45px;
+				display: inline-flex;
+				align-items: center;
+				border: 1px solid #B6B6B6;
+				background-color: #F3F3F3;
+				padding: 5px;
+				width: 100%;
+				input::-ms-input-placeholder {
+					color: #969696;
+				}			  
+				input::placeholder {
+					color: #969696;
 				}
-			}			
-		}
-		.mady-checkbox {
-			margin-top: 25px;
-		}
-		.form-check-input {
-			border-color: transparent;
-			background-color: transparent;
-			&:focus {
+				.mady-email-input {	
+					padding: 10px 30px;				
+					border-radius: 45px;
+					margin-bottom: 0;
+					border: 0;
+					flex: 1;
+					font-size: 16px;
+					color: var(--color-title);
+					background-color: transparent;
+					&:focus {
+						border-color: #20282D;
+						box-shadow: none;
+					}
+					@media screen and (max-width: 767px) {
+						border: 1px solid #B6B6B6;
+					}
+				}
+				@media screen and (max-width: 767px) {
+					flex-direction: column;
+					border: 0;
+					padding: 0;
+				}
+			}
+			input.form-control {
+				min-height: 68px;
+				@media screen and (max-width: 991px) {
+					min-height: 55px;
+				}
+				@media screen and (max-width: 767px) {
+					min-height: 50px;
+				}
+			}
+			.mady-btn-fill {
+				position: relative;
+				z-index: 1;
+				overflow: hidden;
+				height: 68px;
+				cursor: pointer;
+				display: inline-block;
+				font-size: 18px;
+				font-weight: 600;
 				box-shadow: none;
 				outline: none;
-			}
-		}		
-		.form-check-label {
-			font-size: 18px;
-			padding-left: 2px;
-			position: relative;
-			&:before {
-				content: "";
-				position: absolute;
-				width: 16px;
-				height: 16px;
-				top: 4px;
-				left: -15px;
-				margin-left: -5px;
-				border: 1px solid;
-				border-color: #dddddd;
-				border-radius: 3px;
-				background-color: transparent;
+				border: 1px solid var(--color-primary-5);
+				color: var(--color-title);
+				border-radius: 45px;
+				background-color: var(--color-primary-5);
+				padding: 10px 36px;
 				transition: all 0.3s ease-in-out;
-			}
-			&:after {
-				font-family: 'Font Awesome 6 Pro';
-				content: "\f00c";
-				font-weight: 900;
-				position: absolute;
-				margin-left: -20px;
-				padding-left: 3px;
-				font-size: 10px;
-				color: #ffffff;
-				left: 1px;
-				top: 5px;
-				opacity: 0;
-				visibility: hidden;
-				transition: all 0.3s ease-in-out;
-			}
-			a {
-				color: #20282D;
-				transition: all 0.3s ease-in-out;
+				&:before {
+					content: '';
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					width: 800%;
+					height: 800%;
+					background-color: #ffffff;
+					z-index: -1;
+					transform: translate(-50%, -50%) rotate(45deg) scale(0);
+					transition: all 0.3s ease-in-out;
+				}
+				@media screen and (max-width: 991px) {
+					height: 55px;
+					font-size: 17px;
+				}
+				@media screen and (max-width: 767px) {
+					height: 50px;
+					font-size: 16px;
+					width: 100%;
+					margin-top: 10px;
+				}
 				&:hover {
-					color: var(--color-primary-5);
-				}
-			}
-		}
-		.form-check-input[type="checkbox"]:checked + .form-check-label:after {
-			opacity: 1;
-			visibility: visible;			
-		}
-		.form-check-input[type="checkbox"]:checked + .form-check-label:before {
-			background-color: var(--color-primary-5);
-			border-color: var(--color-primary-5);
-		}
-	}
-	.mady-socials {
-		display: flex;
-		align-items: center;
-		gap: 5px;
-		list-style: none;
-		margin: 0;
-		padding: 0;
-		li {
-			a {
-				height: 30px;
-				width: 30px;
-				border: 1px solid;
-				border-color: #B9B9B9;
-				border-radius: 50%;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				color: #B9B9B9;
-				font-size: 10px;
-				transition: all 0.3s ease-in-out;
-				&:hover {
-					color: #ffffff;					
-				}
-				&.mady-facebook {
-					&:hover {
-						border-color: var(--facebook);
-						background-color: var(--facebook);
+					color: var(--color-title);
+					&:before {
+						transform: translate(-50%, -50%) rotate(45deg) scale(1);
 					}
-				}
-				&.mady-linkedin {
-					&:hover {
-						border-color: var(--linkedin);
-						background-color: var(--linkedin);
-					}
-				}
-				&.mady-twitter {
-					&:hover {
-						border-color: var(--twitter);
-						background-color: var(--twitter);
-					}
-				}
-				&.mady-instagram {
-					&:hover {
-						border-color: var(--instagram);
-						background-color: var(--instagram);
-					}
-				}
+				}			
 			}
-		}
-	}
-	.mady-contact-info {
-		
-		.info-box {
-			margin-bottom: 30px;
-			:last-child {
-				margin-bottom: 0;
-			}
-			.mady-info-label {
-				color: #20282D;
-				font-size: 20px;
-				margin-bottom: 10px;
-				font-weight: 400;
-			}
-			.mady-info-text {
-				color: #74787C;
-			}
-		}
-	}
-	.mady-footer {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		.mady-copyright {
-			margin-bottom: 0;
 		}
 	}
 }
